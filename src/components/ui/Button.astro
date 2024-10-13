@@ -1,0 +1,36 @@
+---
+import { cn } from "@/utils/cn";
+import type { HTMLAttributes } from "astro/types";
+
+interface ButtonProps extends HTMLAttributes<"button"> {
+  variant?: "default" | "outline";
+  color?: "primary" | "secondary";
+  className?: string;
+}
+const {
+  variant = "default",
+  color = "primary",
+  className = "",
+  ...props
+}: ButtonProps = Astro.props;
+---
+
+<button
+  class={cn(
+    "px-3 py-3 sm:px-5 sm:py-3 font-semibold border border-transparent text-white transition shadow-[-2px_4px] rounded-full hover:translate-y-[4px] hover:translate-x-[-2px] hover:shadow-none",
+    {
+      "bg-primary hover:bg-primary-hover shadow-primary/40 ":
+        variant === "default" && color === "primary",
+    },
+    {
+      "bg-transparent border-white shadow-white/30 ": variant === "outline",
+    },
+    {
+      "bg-secondary hover:bg-secondary-hover shadow-secondary/40 ":
+        variant === "default" && color === "secondary",
+    },
+    className
+  )}
+  {...props}>
+  <slot />
+</button>

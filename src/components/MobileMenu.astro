@@ -1,0 +1,39 @@
+---
+import { Icon } from "astro-icon/components";
+import { navLinks } from "./Nav.astro";
+---
+
+<nav
+  class="absolute mobile-menu top-0 left-0 h-screen w-[100dvw] hidden bg-white z-20">
+  <div class="flex flex-col">
+    <div class="p-2 text-center relative bg-secondary text-white">
+      Vous avez des questions ou besoin de plus d'informations ? Nous sommes là
+      pour vous aider. <button class="font-semibold open-contact underline"
+        >Contactez nous</button
+      >
+    </div>
+    <div class="flex p-4 my-2 items-center gap-2 justify-between">
+      <p class="text-2xl text-secondary font-bold">Menu</p>
+      <button
+        class="font-medium text-black/80 ml-auto hover:underline go-watch-trial"
+        >Regarder Free Trial</button
+      >
+      <button class="ml-4 menu-btn-close text-2xl p-2 bg-black/10 rounded-full">
+        <Icon name="close" />
+      </button>
+    </div>
+    <ul class="flex flex-col">
+      {
+        navLinks?.map(item => (
+          <a
+            data-navlink
+            onclick="hideMenu();"
+            class="font-medium text-lg aria-current:font-semibold transition p-4 text-black/70 aria-current:bg-primary/10 aria-current:text-primary "
+            href={item.href}>
+            {item.label}
+          </a>
+        ))
+      }
+    </ul>
+  </div>
+</nav>

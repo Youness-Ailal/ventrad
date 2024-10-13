@@ -1,0 +1,48 @@
+---
+import Footer from "@/components/Footer.astro";
+import Nav from "@/components/Nav.astro";
+import "@/index.scss";
+
+const {
+  title = "Ventrad | Solution de gestion des commandes et ventes",
+  description = "Gérez sans effort vos stocks, vos commandes et vos clients sur le web et sur mobile. Augmentez vos ventes et développez votre activité avec la solution e-commerce tout-en-un de Ventrade.",
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+      body {
+        font-family: "Urbanist", sans-serif;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen flex flex-col relative">
+    <Nav />
+    <main class="grow mt-3 lg:mt-5">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+<script>
+  const mobileMenu = document.querySelector(".mobile-menu") as HTMLElement;
+  const mobileMenuBtn = document.querySelector(".menu-btn");
+  const mobileMenuBtnClose = document.querySelector(".menu-btn-close");
+  const showMenu = () => {
+    mobileMenu.style.display = "block";
+  };
+  const hideMenu = () => {
+    mobileMenu.style.display = "none";
+  };
+  mobileMenuBtn.addEventListener("click", showMenu);
+  mobileMenuBtnClose.addEventListener("click", hideMenu);
+</script>
