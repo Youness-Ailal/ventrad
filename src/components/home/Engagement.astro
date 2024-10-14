@@ -1,0 +1,31 @@
+---
+import Container from "../ui/Container.astro";
+import UpperTitle from "../ui/UpperTitle.astro";
+import Title from "../ui/Title.astro";
+import Paragraph from "../ui/Paragraph.astro";
+import Button from "../ui/Button.astro";
+import logo from "@assets/logos/logo.svg?url";
+---
+
+<Container>
+  <div
+    class="grid grid-cols-1 min-[900px]:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] justify-between gap-10 lg:gap-20">
+    <div
+      class="flex flex-col items-start gap-3 p-2 lg:p-6 w-[min(1400px,100%)] mx-auto">
+      <UpperTitle>Ventrad</UpperTitle>
+      <Title>Notre Engagement</Title>
+      <Paragraph>
+        Chez Ventrad, nous ne créons pas simplement des plateformes, nous
+        construisons des partenariats. Notre équipe d'experts s'engage à fournir
+        une solution qui non seulement répond à vos besoins actuels, mais qui
+        pose également les bases de votre succès futur.<br /><br />
+        Prêt à révolutionner votre présence en ligne ? Contactez-nous dès aujourd'hui
+        pour démarrer votre projet sur mesure.
+      </Paragraph>
+      <Button action="contact" className="mt-4 lg:mt-7">Rejoignez-nous</Button>
+    </div>
+    <div class="max-[900px]:hidden">
+      <img src={logo} alt="logo" class="h-full w-full" />
+    </div>
+  </div>
+</Container>

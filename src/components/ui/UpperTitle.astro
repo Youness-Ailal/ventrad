@@ -1,0 +1,9 @@
+---
+import { cn } from "@/utils/cn";
+
+const { className = "" } = Astro.props;
+---
+
+<p class={cn("text-lg lg:text-xl text-secondary tracking-[3px]", className)}>
+  <slot />
+</p>

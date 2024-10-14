@@ -1,6 +1,7 @@
 ---
 import Button from "../ui/Button.astro";
 import { Icon } from "astro-icon/components";
+import Container from "../ui/Container.astro";
 export const statsData = [
   {
     title: "+25% de CA",
@@ -25,22 +26,23 @@ export const statsData = [
 ];
 ---
 
-<div class="wrapper">
+<Container>
   <div
-    class="mx-2 bg-secondary-dark rounded-2xl lg:rounded-[30px] min-h-[400px] p-4 lg:min-h-[500px] flex items-center justify-center flex-col text-white text-center gap-3 lg:gap-5">
-    <p class="tracking-wider font-light text-sm sm:text-base">
+    class="bg-secondary-dark rounded-2xl lg:rounded-[30px] min-h-[400px] p-4 lg:min-h-[550px] flex items-center justify-center flex-col text-white text-center gap-3 lg:gap-5">
+    <p class="tracking-widest font-light text-sm sm:text-base">
       La solution complète pour gérer les commandes et développer les ventes
     </p>
     <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[66px] font-bold">
       Boostez votre commerce<br /> de gros avec Ventrad
     </h1>
-    <p class="tracking-wider font-light max-w-[85ch] text-sm mt-2 lg:mt-4">
+    <p
+      class="tracking-wider text-sm font-light max-w-[85ch] mt-2 lg:mt-4 leading-6">
       Gérez sans effort vos stocks, vos commandes et vos clients sur le web et
       sur mobile. Augmentez vos ventes et développez votre activité avec la
       solution e-commerce tout-en-un de Ventrade.
     </p>
     <div class="flex items-center gap-3 mt-5 lg:mt-8 flex-wrap justify-center">
-      <Button variant="outline">Contacter Sales</Button>
+      <Button variant="outline" action="contact">Contacter Sales</Button>
       <Button>Obtenir Une Démo</Button>
     </div>
   </div>
@@ -62,4 +64,4 @@ export const statsData = [
       ))
     }
   </div>
-</div>
+</Container>
