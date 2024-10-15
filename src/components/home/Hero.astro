@@ -39,15 +39,17 @@ export const statsData = [
       class="tracking-wider text-sm font-light max-w-[85ch] mt-2 lg:mt-4 leading-6">
       Gérez sans effort vos stocks, vos commandes et vos clients sur le web et
       sur mobile. Augmentez vos ventes et développez votre activité avec la
-      solution e-commerce tout-en-un de Ventrade.
+      solution e-commerce tout-en-un de Ventrad.
     </p>
     <div class="flex items-center gap-3 mt-5 lg:mt-8 flex-wrap justify-center">
-      <Button variant="outline" action="contact">Contacter Sales</Button>
+      <Button variant="outline" action="contact" color="white"
+        >Contacter Sales</Button
+      >
       <Button>Obtenir Une Démo</Button>
     </div>
   </div>
   <div
-    class="mt-4 justify-center grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-y-6 leading-5 gap-4 items-center px-6 py-3 lg:px-8 lg:py-5 bg-secondary-light rounded-xl lg:rounded-[20px] mx-2">
+    class="mt-4 justify-center grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-y-6 leading-5 gap-4 items-center px-6 py-3 lg:px-8 lg:py-5 bg-light-blue-bg rounded-xl lg:rounded-[20px] mx-2">
     {
       statsData.map(item => (
         <div class="flex gap-3 justify-start sm:justify-center">
@@ -56,7 +58,7 @@ export const statsData = [
           </p>
           <div class="flex flex-col gap-1">
             <p class="text-black font-semibold">{item.title} </p>
-            <p class="text-black/70" set:html={item.text}>
+            <p class="text-black/80" set:html={item.text}>
               {" "}
             </p>
           </div>

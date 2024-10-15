@@ -1,0 +1,46 @@
+---
+import Container from "../ui/Container.astro";
+import UpperTitle from "../ui/UpperTitle.astro";
+import Title from "../ui/Title.astro";
+import Paragraph from "../ui/Paragraph.astro";
+import Button from "../ui/Button.astro";
+import mac from "@assets/macStudio.jpg?url";
+import { whyVentradData } from "@/utils/constants";
+import { Icon } from "astro-icon/components";
+---
+
+<Container>
+  <div
+    class="grid max-w-1400 mx-auto grid-cols-1 min-[800px]:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] justify-between gap-6 md:gap-14 lg:gap-16">
+    <div
+      class="flex flex-col items-start max-[800px]:order-2 gap-3 p-2 lg:p-6 w-[min(1400px,100%)] mx-auto">
+      <UpperTitle>Les bénéfices</UpperTitle>
+      <Title>Pourquoi choisir Ventrad ?</Title>
+      <Paragraph>
+        Ventrad n’est pas une simple plateforme de vente. C’est un outil
+        stratégique pour votre croissance.
+      </Paragraph>
+      <div class="my-5 lg:my-8 flex flex-col gap-4 lg:gap-6">
+        {
+          whyVentradData.map(item => (
+            <div class="flex items-start gap-2">
+              <p class="h-6 aspect-square text-lg flex items-center justify-center rounded-full bg-secondary">
+                <Icon name="check" />
+              </p>
+              <p class="text-lg lg:text-xl text-secondary-dark-active font-semibold">
+                {item}{" "}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class="self-start">
+      <img
+        src={mac}
+        alt="mac studio showing ventrad ecommerce application dashboard"
+        class="h-full w-full object-cover"
+      />
+    </div>
+  </div>
+</Container>

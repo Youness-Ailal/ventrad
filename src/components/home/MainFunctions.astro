@@ -1,0 +1,35 @@
+---
+import { Icon } from "astro-icon/components";
+import Container from "../ui/Container.astro";
+import Title from "../ui/Title.astro";
+import UpperTitle from "../ui/UpperTitle.astro";
+import { functionalitiesData } from "@/utils/constants";
+import Button from "../ui/Button.astro";
+---
+
+<div class="w-full bg-light-blue-bg">
+  <Container>
+    <div
+      class="flex flex-col gap-2 text-center py-8 lg:py-16 p-2 max-w-1400 mx-auto">
+      <UpperTitle>Fonctionnalités Principales</UpperTitle>
+      <Title
+        >Plate-forme tout-en-un pour<br /> votre activité de vente en gros</Title
+      >
+      <div
+        class="my-6 lg:my-10 auto-rows-fr grid text-start grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4 lg:gap-8">
+        {
+          functionalitiesData.map(item => (
+            <div class="flex flex-col items-start gap-3 rounded-lg lg:rounded-xl p-4 lg:p-5 bg-secondary">
+              <p class="h-10 lg:h-14 text-xl lg:text-3xl aspect-square flex items-center justify-center  rounded-full bg-light-blue-bg">
+                <Icon name={item.icon} />
+              </p>
+              <p class="text-white font-semibold text-lg">{item.title} </p>
+              <p class="text-white/80" set:html={item.text} />
+            </div>
+          ))
+        }
+      </div>
+      <Button className="self-center" variant="outline">En savoir plus</Button>
+    </div>
+  </Container>
+</div>

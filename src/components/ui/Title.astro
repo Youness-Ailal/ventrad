@@ -4,6 +4,10 @@ import { cn } from "@/utils/cn";
 const { className = "" } = Astro.props;
 ---
 
-<p class={cn("text-3xl lg:text-4xl text-black font-extrabold", className)}>
+<p
+  class={cn(
+    "text-3xl lg:text-4xl text-secondary-dark-hover font-[900]",
+    className
+  )}>
   <slot />
 </p>
