@@ -5,6 +5,12 @@ import VideoTrial from "@/components/home/VideoTrial.astro";
 import MainFunctions from "@/components/home/MainFunctions.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
 import WhyVentrad from "@/components/home/WhyVentrad.astro";
+import PricingV1 from "@/components/home/PricingV1.astro";
+import ChooseUs from "@/components/home/ChooseUs.astro";
+import Simple from "@/components/home/Simple.astro";
+import Faq from "@/components/home/Faq.astro";
+import AskDemo from "@/components/home/AskDemo.astro";
+import Ready from "@/components/ui/Ready.astro";
 ---
 
 <MainLayout>
@@ -13,4 +19,36 @@ import WhyVentrad from "@/components/home/WhyVentrad.astro";
   <VideoTrial />
   <MainFunctions />
   <WhyVentrad />
+  <PricingV1 />
+  <ChooseUs />
+  <Simple />
+  <Faq />
+  <AskDemo />
 </MainLayout>
+
+<script>
+  document.body.style.overflow = "hidden";
+  document.body.style.overflowX = "hidden";
+  const hero = document.querySelector(".home-hero") as HTMLElement;
+  const titles = document.querySelectorAll(".title-hero");
+  const title1 = titles[0] as HTMLElement;
+  const title2 = titles[1] as HTMLElement;
+  const opacityItems = document.querySelectorAll(".show-opacity");
+  const baseTime = 200;
+
+  setTimeout(() => {
+    hero.style.scale = "1";
+  }, baseTime);
+
+  setTimeout(() => {
+    document.body.style.overflow = "auto";
+    title1.style.translate = "0 0";
+  }, baseTime + 600);
+  setTimeout(() => {
+    document.body.style.overflow = "auto";
+    title2.style.translate = "0 0";
+  }, baseTime + 900);
+  setTimeout(() => {
+    opacityItems.forEach((item: HTMLElement) => (item.style.opacity = "1"));
+  }, baseTime + 1300);
+</script>

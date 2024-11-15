@@ -1,4 +1,71 @@
+::selection {
+  background-color: hsl(9, 61%, 80%);
+  color: #212735;
+}
+
 .wrapper {
   width: min(1500px, 100%);
   margin: 0 auto;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.home-hero {
+  scale: 3;
+  transition: 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.title-hero {
+  translate: 0 110%;
+  transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.show-opacity {
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+.contact-modal {
+  opacity: 0;
+  display: none;
+  transition: 0.2s allow-discrete;
+}
+.contact-modal.show {
+  opacity: 1;
+  display: flex;
+  transition: 0.2s ease allow-discrete;
+}
+.toast {
+  opacity: 0;
+  display: none;
+  transition: 0.2s allow-discrete;
+}
+.toast.show {
+  opacity: 1;
+  display: flex;
+  transition: 0.2s ease allow-discrete;
+}
+@starting-style {
+  .contact-modal.show {
+    opacity: 0;
+  }
+  .toast.show {
+    opacity: 0;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input:not(:focus):not(:placeholder-shown):valid {
+  border-color: #13171f;
 }

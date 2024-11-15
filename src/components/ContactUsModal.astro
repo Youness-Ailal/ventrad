@@ -1,0 +1,101 @@
+---
+import { Icon } from "astro-icon/components";
+import { Toast } from "webcoreui/astro";
+---
+
+<div
+  class="contact-modal z-50 h-[100dvh] w-[100dvw] bg-black/50 backdrop-blur-[3px] fixed top-0 left-0 flex items-center justify-center">
+  <div
+    class="w-[min(550px,100%)] rounded-xl lg:rounded-2xl bg-white p-5 lg:p-8 flex flex-col gap-4 contact-box">
+    <div class="flex items-start gap-4 justify-between">
+      <p class="text-2xl text-secondary-active font-bold">
+        Contactez Notre<br /> Équipe Commerciale
+      </p>
+      <button
+        class="p-3 close-modale-btn text-gray-700 bg-gray-200/80 hover:bg-gray-300/60 transition rounded-full text-xl">
+        <Icon name="close" />
+      </button>
+    </div>
+    <p class="text-black/50">
+      Remplissez le formulaire ci-dessous et un de nos experts vous contactera
+      rapidement pour discuter de vos besoins.
+    </p>
+    <form
+      id="contact-us"
+      action=""
+      class="mt-5 grid grid-cols-2 gap-x-8 gap-y-6">
+      <label for="first_name" class="flex flex-col gap-1 font-medium">
+        Prénom
+        <input
+          required
+          class="p-3 focus:outline-none focus:border-secondary-darker border border-gray-300 transition rounded-2xl bg-[#E9EDF1]"
+          placeholder="Prénom"
+          type="text"
+          id="first_name"
+          name="first_name"
+        />
+      </label>
+      <label for="last_name" class="flex flex-col gap-1 font-medium">
+        Nom
+        <input
+          name="last_name"
+          required
+          class="p-3 focus:outline-none focus:border-secondary-darker border border-gray-300 transition rounded-2xl bg-[#E9EDF1]"
+          placeholder="Nom"
+          type="text"
+          id="last_name"
+        />
+      </label>
+      <label for="email" class="flex flex-col gap-1 font-medium">
+        Email
+        <input
+          name="email"
+          required
+          class="p-3 focus:outline-none focus:border-secondary-darker border border-gray-300 transition rounded-2xl bg-[#E9EDF1]"
+          placeholder="Email"
+          inputmode="email"
+          type="email"
+          id="email"
+        />
+      </label>
+      <label for="phone" class="flex flex-col gap-1 font-medium">
+        N° de telephone
+        <input
+          name="phone"
+          required
+          class="p-3 focus:outline-none focus:border-secondary-darker border border-gray-300 transition rounded-2xl bg-[#E9EDF1]"
+          placeholder="N° de telephone"
+          inputmode="numeric"
+          type="number"
+          id="phone"
+        />
+      </label>
+      <label for="company" class="flex flex-col gap-1 col-span-2">
+        <p>
+          Nom de l'entreprise <span class="font-light text-black/50"
+            >(Optionnel)</span
+          >
+        </p>
+        <input
+          name="company"
+          class="p-3 focus:outline-none focus:border-secondary-darker border border-gray-300 transition rounded-2xl bg-[#E9EDF1]"
+          placeholder="Nom de l'entreprise"
+          type="text"
+          id="company"
+        />
+      </label>
+      <button
+        form="contact-us"
+        class="p-3 bg-primary col-span-2 mt-4 text-white rounded-2xl hover:bg-primary-hover active:bg-primary-active font-semibold"
+        >Envoyer</button
+      >
+    </form>
+  </div>
+</div>
+<div
+  class="fixed top-5 left-1/2 border border-teal-800 -translate-x-1/2 py-3 px-6 shadow-md font-semibold text-teal-600 flex items-center gap-2 bg-teal-50 rounded-lg tracking-wide toast">
+  Contact details received
+  <Icon name="mdi:check" />
+</div>
+
+<script></script>

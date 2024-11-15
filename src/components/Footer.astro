@@ -1,5 +1,127 @@
 ---
-
+import Container from "./ui/Container.astro";
+import logo from "@assets/logos/logoText.svg?url";
+import Paragraph from "./ui/Paragraph.astro";
+import EmailForm from "./EmailForm.astro";
+import { navLinks } from "./Nav.astro";
+import { contactDetails, footerLinks } from "@/utils/constants";
+import { Icon } from "astro-icon/components";
+import Ready from "./ui/Ready.astro";
 ---
 
-<footer>Footer</footer>
+<footer class="mt-8 lg:mt-20 bg-white">
+  <Ready />
+  <Container>
+    <div class="flex flex-col p-4 lg:p-8 gap-12">
+      <div class="py-8 border-b-2 border-black/20">
+        <img src={logo} alt="Ventrad" class="h-6" />
+      </div>
+      <div class="flex flex-wrap justify-between gap-10 lg:gap-28">
+        <div class="max-w-[300px] flex flex-col">
+          <p class="text-3xl text-secondary font-bold mb-2">
+            Restez informé avec Ventrade
+          </p>
+          <Paragraph
+            >Recevez conseils, mises à jour et promotions par email</Paragraph
+          >
+          <div class="self-start">
+            <EmailForm />
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <p class="font-semibold text-lg">Pages</p>
+          <ul class="space-y-1">
+            {
+              navLinks.map(item => (
+                <li>
+                  <a
+                    class="text-black/60 p-2 hover:underline hover:text-black/90"
+                    href={item.href}>
+                    {item.label}{" "}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+          <p class="font-semibold text-lg">Contact</p>
+          <ul class="space-y-2">
+            <li>
+              <a
+                class="flex items-center py-2 gap-2 text-black/60 hover:text-black/90 hover:underline"
+                href={"tel:" + contactDetails.phone}>
+                <Icon class="text-2xl" name={"phone"} />
+                {contactDetails.phone}
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex items-center py-2 gap-4 text-black/60 hover:text-black/90 hover:underline"
+                href={"mailto:" + contactDetails.email}>
+                <Icon class="text-2xl" name={"email"} />
+                {contactDetails.email}
+              </a>
+            </li>
+            <li
+              class="flex items-start py-2 gap-2 text-black/60 hover:text-black/90">
+              <Icon class="text-2xl" name={"location"} />
+              <address
+                style="font-style: normal;"
+                class="max-w-[35ch] flex gap-1">
+                <!-- <p class="font-semibold">Address</p><span> : </span> -->
+
+                {"Address : " + contactDetails.address}
+              </address>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+          <p class="font-semibold text-lg">Réseaux sociaux</p>
+          <ul class="flex gap-4">
+            <li>
+              <a href={contactDetails.instagram} class="" target="_blank">
+                <Icon
+                  class="h-10 w-10 p-2 hover:bg-secondary-darker transition rounded-full bg-secondary-dark text-white"
+                  name="mdi:instagram"
+                />
+              </a>
+            </li>
+            <li>
+              <a href={contactDetails.linkedin} class="" target="_blank">
+                <Icon
+                  class="h-10 w-10 p-2 hover:bg-secondary-darker transition rounded-full bg-secondary-dark text-white"
+                  name="mdi:linkedin"
+                />
+              </a>
+            </li>
+            <li>
+              <a href={contactDetails.youtube} class="" target="_blank">
+                <Icon
+                  class="h-10 w-10 p-2 hover:bg-secondary-darker transition rounded-full bg-secondary-dark text-white"
+                  name="mdi:youtube"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="py-4 pt-8 border-t border-black/20 flex flex-wrap gap-4 justify-between">
+        <p class="text-black/40">
+          @{new Date().getFullYear()} Ventrad Private Ltd. Tous droits réservés
+        </p>
+        <div class="flex items-center gap-2">
+          <a
+            class="text-black/40 hover:text-black/60"
+            href={footerLinks.condition}>Conditions d'utilisation</a
+          >
+          <a
+            class="text-black/40 hover:text-black/60"
+            href={footerLinks.condition}>Politique de confidentialité</a
+          >
+        </div>
+      </div>
+    </div>
+  </Container>
+</footer>

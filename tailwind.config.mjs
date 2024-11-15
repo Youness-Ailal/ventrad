@@ -25,6 +25,7 @@ export default {
         "secondary-dark-hover": "#212735",
         "secondary-dark-active": "#191d28",
         "light-blue-bg": "#E9EDF1",
+        border: "#E1E1E1",
       },
       maxWidth: {
         1400: "1400px",

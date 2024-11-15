@@ -1,0 +1,31 @@
+---
+import Container from "../ui/Container.astro";
+import logo from "@assets/logos/logowhite.svg?url";
+import UpperTitle from "../ui/UpperTitle.astro";
+import Title from "../ui/Title.astro";
+import Paragraph from "../ui/Paragraph.astro";
+import Button from "../ui/Button.astro";
+import EmailForm from "../EmailForm.astro";
+---
+
+<Container>
+  <div
+    class="grid grid-cols-1 lg:grid-cols-[auto_1fr_auto] justify-between gap-8 w-full">
+    <div
+      class="w-[280px] min-h-[460px] hidden lg:flex bg-primary items-center justify-center rounded-2xl">
+      <img src={logo} alt="" />
+    </div>
+    <div class="flex items-center justify-center flex-col gap-2 text-center">
+      <UpperTitle>Commencer maintenant</UpperTitle>
+      <Title>Demandez une démo</Title>
+      <Paragraph
+        >Découvrez Ventrade en action avec une démo en <br />direct.</Paragraph
+      >
+      <EmailForm />
+    </div>
+    <div
+      class="w-[280px] ml-auto min-h-[460px] hidden lg:flex bg-secondary items-center justify-center rounded-2xl">
+      <img src={logo} alt="" />
+    </div>
+  </div>
+</Container>

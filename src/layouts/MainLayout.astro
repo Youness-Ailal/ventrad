@@ -1,4 +1,5 @@
 ---
+import ContactUsModal from "@/components/ContactUsModal.astro";
 import Footer from "@/components/Footer.astro";
 import Nav from "@/components/Nav.astro";
 import "@/index.scss";
@@ -31,12 +32,42 @@ const {
       <slot />
     </main>
     <Footer />
+    <ContactUsModal />
   </body>
 </html>
+
 <script>
   const mobileMenu = document.querySelector(".mobile-menu") as HTMLElement;
   const mobileMenuBtn = document.querySelector(".menu-btn");
   const mobileMenuBtnClose = document.querySelector(".menu-btn-close");
+  const contactModal = document.querySelector(".contact-modal") as HTMLElement;
+  const contactBtns = document.querySelectorAll(".contact-btn");
+  const closeModalBtn = document.querySelector(
+    ".close-modale-btn"
+  ) as HTMLElement;
+  const toast = document.querySelector(".toast") as HTMLElement;
+  const form = document.querySelector("#contact-us") as HTMLFormElement;
+  const watchTrialBtns = document.querySelectorAll(".go-watch-trial");
+  const videoSection = document.querySelector(".video-section") as HTMLElement;
+
+  // Hide show contact modal
+  const showModal = () => {
+    contactModal.classList.add("show");
+  };
+  const hideModal = () => {
+    contactModal.classList.remove("show");
+  };
+  contactBtns.forEach((btn: HTMLElement) =>
+    btn.addEventListener("click", showModal)
+  );
+  closeModalBtn.addEventListener("click", hideModal);
+  contactModal.addEventListener("click", e => {
+    if ((e.target as HTMLElement).classList.contains("contact-modal")) {
+      hideModal();
+    }
+  });
+
+  // Hide show nav menu
   const showMenu = () => {
     mobileMenu.style.display = "block";
   };
@@ -45,4 +76,35 @@ const {
   };
   mobileMenuBtn.addEventListener("click", showMenu);
   mobileMenuBtnClose.addEventListener("click", hideMenu);
+
+  //Handle form submit
+  const hideToast = () => toast.classList.remove("show");
+  const showToast = () => toast.classList.add("show");
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    const data = [...formData.entries()];
+    console.log(formData.get("first_name"));
+
+    if (true) {
+      hideModal();
+      showToast();
+      setTimeout(() => {
+        hideToast();
+      }, 3000);
+    }
+  });
+
+  // watch trial btns
+  watchTrialBtns.forEach((btn: HTMLButtonElement) =>
+    btn.addEventListener("click", () => {
+      videoSection.scrollIntoView({
+        behavior: "smooth",
+        block:"center"
+      });
+      hideMenu();
+    })
+  );
 </script>

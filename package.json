@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.2",
+    "@iconify-json/carbon": "^1.2.4",
+    "@iconify-json/mdi": "^1.2.1",
     "astro": "^4.15.12",
     "astro-icon": "^1.1.1",
     "clsx": "^2.1.1",

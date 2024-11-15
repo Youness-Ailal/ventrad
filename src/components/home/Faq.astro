@@ -1,0 +1,32 @@
+---
+import { questions } from "@/utils/constants";
+import Container from "../ui/Container.astro";
+import Title from "../ui/Title.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Container>
+  <div class="text-center my-4 mb-8">
+    <Title>FAQs</Title>
+  </div>
+  <div class="flex flex-col gap-4 mx-auto">
+    {
+      questions.map(item => (
+        <details class="group bg-secondary-light hover:bg-secondary-light-hover open:bg-secondary-light-hover transition [&_summary::-webkit-details-marker]:hidden  rounded-md">
+          <summary class="grid grid-cols-[1fr_auto] cursor-pointer p-3 lg:p-6 items-center justify-between gap-4">
+            <h5 class="text-xl group-open:text-secondary-hover font-semibold text-secondary-darker">
+              {item.question}{" "}
+            </h5>
+            <Icon
+              class="ml-auto text-4xl group-open:rotate-180 transition p-2 bg-secondary rounded-full text-white"
+              name={"arrow"}
+            />
+          </summary>
+          <p class="p-3  lg:p-6 pt-2 pl-0 ml-4 max-w-[100ch] text-lg border-t border-secondary-darker/20">
+            {item.answer}{" "}
+          </p>
+        </details>
+      ))
+    }
+  </div>
+</Container>
