@@ -69,3 +69,7 @@ input[type="number"] {
 input:not(:focus):not(:placeholder-shown):valid {
   border-color: #13171f;
 }
+
+.w-wistia-logo.w-css-reset {
+  display: none !important;
+}

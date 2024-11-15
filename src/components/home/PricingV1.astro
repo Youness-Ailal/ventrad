@@ -9,8 +9,8 @@ import { Icon } from "astro-icon/components";
 import Button from "../ui/Button.astro";
 ---
 
-<Container >
-  <div class="flex flex-col text-center gap-2 p-2 max-w-1400 mx-auto min-w-[1000px] overflow-x-auto">
+<Container>
+  <div class="flex flex-col text-center gap-2 p-1 sm:p-2 max-w-1400 mx-auto">
     <UpperTitle>Plans</UpperTitle>
     <Title>Des plans flexibles pour chaque grossiste</Title>
     <Paragraph
@@ -18,29 +18,43 @@ import Button from "../ui/Button.astro";
       des entreprises</Paragraph
     >
     <!-- <form
-      class="grid my-10 gap-1 lg:my-16 grid-cols-3 w-[min(400px,100%)] mx-auto p-4 rounded-full border border-secondary/50">
+      class="grid mt-10 gap-3 grid-cols-4 w-full mx-auto p-2 py-4 sm:p-4 rounded-lg border border-secondary/50">
       <div class="w-full flex">
-        <input checked class="hidden peer" type="radio" name="price" id="mad" />
+        <input
+          checked
+          class="hidden peer"
+          type="radio"
+          name="price"
+          id="basique"
+        />
         <label
-          class="p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-full border peer-checked:border-secondary/50"
-          for="mad">
-          MAD
+          class="p-2 sm:p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-lg border peer-checked:border-secondary/50"
+          for="basique">
+          Basique
         </label>
       </div>
       <div class="w-full flex">
-        <input class="hidden peer" type="radio" name="price" id="eur" />
+        <input class="hidden peer" type="radio" name="price" id="croissance" />
         <label
-          class="p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-full border peer-checked:border-secondary/50"
-          for="eur">
-          EUR
+          class="p-2 sm:p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-lg border peer-checked:border-secondary/50"
+          for="croissance">
+          Croissance
         </label>
       </div>
       <div class="w-full flex">
-        <input class="hidden peer" type="radio" name="price" id="usd" />
+        <input class="hidden peer" type="radio" name="price" id="avance" />
         <label
-          class="p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-full border peer-checked:border-secondary/50"
-          for="usd">
-          USD
+          class="p-2 sm:p-[10px] border-primary-dark/30 w-full cursor-pointer transition font-medium text-primary peer-checked:font-bold peer-checked:text-primary peer-checked:bg-primary/10 rounded-lg border peer-checked:border-primary/50"
+          for="avance">
+          Avancé
+        </label>
+      </div>
+      <div class="w-full flex">
+        <input class="hidden peer" type="radio" name="price" id="Entreprise" />
+        <label
+          class="p-2 sm:p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-lg border peer-checked:border-secondary/50"
+          for="Entreprise">
+          Entreprise
         </label>
       </div>
     </form> -->
