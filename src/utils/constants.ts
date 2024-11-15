@@ -390,10 +390,10 @@ export const contactDetails = {
   phone: "+212 701208778",
   email: "hello@ventrad.co",
   address: "LOT 20 BUREAU N3, RUE 709 Ave Abderrahim Bouabid, Agadir 83000",
-  // facebook: "https://facebook.com/",
-  instagram: "instagram.com/ventrad.co ",
-  linkedin: "Linkedin.com/company/ventrad/ ",
-  youtube: "http://youtube.com/@ventrad",
+  facebook: "https://facebook.com/Ventrad.co",
+  instagram: "https://instagram.com/ventrad.co",
+  linkedin: "https://Linkedin.com/company/ventrad/ ",
+  youtube: "https://youtube.com/@ventrad",
 };
 export const footerLinks = {
   condition: "/",
