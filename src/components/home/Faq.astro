@@ -14,9 +14,9 @@ import { Icon } from "astro-icon/components";
       questions.map(item => (
         <details class="group bg-secondary-light hover:bg-secondary-light-hover open:bg-secondary-light-hover transition [&_summary::-webkit-details-marker]:hidden  rounded-md">
           <summary class="grid grid-cols-[1fr_auto] cursor-pointer p-3 lg:p-6 items-center justify-between gap-4">
-            <h5 class="text-xl group-open:text-secondary-hover font-semibold text-secondary-darker">
+            <p class="text-xl group-open:text-secondary-hover font-semibold text-secondary-darker">
               {item.question}{" "}
-            </h5>
+            </p>
             <Icon
               class="ml-auto text-4xl group-open:rotate-180 transition p-2 bg-secondary rounded-full text-white"
               name={"arrow"}
