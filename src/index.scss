@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
 ::selection {
   background-color: hsl(9, 61%, 80%);
   color: #212735;
@@ -16,16 +20,34 @@ details > summary::-webkit-details-marker {
 }
 
 .home-hero {
-  scale: 3;
-  transition: 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center;
+  animation: scaleup 1.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  @media (max-width: 850px) {
+    animation: none;
+  }
 }
-.title-hero {
-  translate: 0 110%;
-  transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+.hero-title-container span:first-child .title-hero {
+  animation: showup 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+  animation-delay: 0.6s;
+  @media (max-width: 850px) {
+    animation-delay: .1s;
+  }
 }
+.hero-title-container span:last-child .title-hero {
+  animation: showup 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+  animation-delay: 0.8s;
+  @media (max-width: 850px) {
+    animation-delay: 0.3s;
+  }
+}
+
 .show-opacity {
-  opacity: 0;
-  transition: 0.2s ease-in;
+  animation: fadeIn 0.2s backwards;
+  animation-delay: 1.1s;
+  @media (max-width: 850px) {
+    animation-delay: 0.6s;
+  }
 }
 .contact-modal {
   opacity: 0;
@@ -55,7 +77,7 @@ details > summary::-webkit-details-marker {
   transition: 0.2s allow-discrete;
 }
 .plan-item.selected {
-  opacity: 1 ;
+  opacity: 1;
   translate: 0 0;
   display: flex;
   transition: 0.2s ease allow-discrete;
@@ -89,4 +111,29 @@ input:not(:focus):not(:placeholder-shown):valid {
 
 .w-wistia-logo.w-css-reset {
   display: none !important;
+}
+
+@keyframes showup {
+  from {
+    translate: 0 110%;
+  }
+  to {
+    translate: 0%;
+  }
+}
+@keyframes scaleup {
+  from {
+    transform: scale(3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

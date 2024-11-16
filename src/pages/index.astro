@@ -27,8 +27,8 @@ import Ready from "@/components/ui/Ready.astro";
 </MainLayout>
 
 <script>
-  document.body.style.overflow = "hidden";
-  document.body.style.overflowX = "hidden";
+  // document.body.style.overflow = "hidden";
+  // document.body.style.overflowX = "hidden";
   const hero = document.querySelector(".home-hero") as HTMLElement;
   const titles = document.querySelectorAll(".title-hero");
   const title1 = titles[0] as HTMLElement;
@@ -36,19 +36,19 @@ import Ready from "@/components/ui/Ready.astro";
   const opacityItems = document.querySelectorAll(".show-opacity");
   const baseTime = 200;
 
-  setTimeout(() => {
-    hero.style.scale = "1";
-  }, baseTime);
+  // setTimeout(() => {
+  //   hero.style.scale = "1";
+  // }, baseTime);
 
-  setTimeout(() => {
-    document.body.style.overflow = "auto";
-    title1.style.translate = "0 0";
-  }, baseTime + 600);
-  setTimeout(() => {
-    document.body.style.overflow = "auto";
-    title2.style.translate = "0 0";
-  }, baseTime + 900);
-  setTimeout(() => {
-    opacityItems.forEach((item: HTMLElement) => (item.style.opacity = "1"));
-  }, baseTime + 1300);
+  // setTimeout(() => {
+  //   // document.body.style.overflow = "auto";
+  //   title1.style.translate = "0 0";
+  // }, baseTime + 600);
+  // setTimeout(() => {
+  //   // document.body.style.overflow = "auto";
+  //   title2.style.translate = "0 0";
+  // }, baseTime + 900);
+  // setTimeout(() => {
+  //   opacityItems.forEach((item: HTMLElement) => (item.style.opacity = "1"));
+  // }, baseTime + 1300);
 </script>
