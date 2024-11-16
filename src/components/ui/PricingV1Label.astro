@@ -1,0 +1,86 @@
+---
+
+---
+
+<form
+  class="grid mt-10 gap-3 grid-cols-4 max-[450px]:grid-cols-2 w-full mx-auto p-2 py-4 sm:p-4 rounded-lg border border-secondary/50">
+  <div class="w-full flex">
+    <input checked class="hidden peer" type="radio" name="price" id="basique" />
+    <label
+      class="p-2 sm:p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-lg border peer-checked:border-secondary/50"
+      for="basique">
+      Basique
+    </label>
+  </div>
+  <div class="w-full flex">
+    <input class="hidden peer" type="radio" name="price" id="croissance" />
+    <label
+      class="p-2 sm:p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-lg border peer-checked:border-secondary/50"
+      for="croissance">
+      Croissance
+    </label>
+  </div>
+  <div class="w-full flex">
+    <input class="hidden peer" type="radio" name="price" id="avance" checked />
+    <label
+      class="p-2 sm:p-[10px] border-primary-dark/30 w-full cursor-pointer transition font-medium text-primary peer-checked:font-bold peer-checked:text-primary peer-checked:bg-primary/10 rounded-lg border peer-checked:border-primary/50"
+      for="avance">
+      Avancé
+    </label>
+  </div>
+  <div class="w-full flex">
+    <input class="hidden peer" type="radio" name="price" id="Entreprise" />
+    <label
+      class="p-2 sm:p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-lg border peer-checked:border-secondary/50"
+      for="Entreprise">
+      Entreprise
+    </label>
+  </div>
+</form>
+
+<script>
+  type planType = "basic" | "avance" | "scale" | "entreprise";
+  const plans: Record<planType, HTMLElement> = {
+    basic: document.querySelector(".Plan.Basique"),
+    avance: document.querySelector(".Plan.Avancé"),
+    scale: document.querySelector(".Plan.Croissance"),
+    entreprise: document.querySelector(".Plan.Entreprise"),
+  };
+
+  const showPlan = (selectedPlan: planType) => {
+    Object.entries(plans).forEach(([plan, element]) => {
+      if (element) {
+        if (plan === selectedPlan) {
+          element.classList.add("selected");
+        } else {
+          element.classList.remove("selected");
+        }
+      }
+    });
+  };
+
+  const form = document.querySelector("form") as HTMLFormElement;
+  if (form) {
+    form.addEventListener("change", event => {
+      const target = event.target as HTMLInputElement;
+      if (target.name === "price" && target.checked) {
+        switch (target.id) {
+          case "basique":
+            showPlan("basic");
+            break;
+          case "croissance":
+            showPlan("scale");
+            break;
+          case "avance":
+            showPlan("avance");
+            break;
+          case "Entreprise":
+            showPlan("entreprise");
+            break;
+          default:
+            console.warn("Unknown plan selected");
+        }
+      }
+    });
+  }
+</script>

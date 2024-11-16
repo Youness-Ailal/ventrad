@@ -7,6 +7,9 @@ import UpperTitle from "../ui/UpperTitle.astro";
 import { cn } from "@/utils/cn";
 import { Icon } from "astro-icon/components";
 import Button from "../ui/Button.astro";
+import PricingV1Label from "../ui/PricingV1Label.astro";
+import PricingV1TableDesktop from "../ui/PricingV1TableDesktop.astro";
+import PricingV1TableMobile from "../ui/PricingV1TableMobile.astro";
 ---
 
 <Container>
@@ -17,127 +20,13 @@ import Button from "../ui/Button.astro";
       >Ventrade offre quatre plans de tarification adaptés<br /> aux besoins variés
       des entreprises</Paragraph
     >
-    <!-- <form
-      class="grid mt-10 gap-3 grid-cols-4 w-full mx-auto p-2 py-4 sm:p-4 rounded-lg border border-secondary/50">
-      <div class="w-full flex">
-        <input
-          checked
-          class="hidden peer"
-          type="radio"
-          name="price"
-          id="basique"
-        />
-        <label
-          class="p-2 sm:p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-lg border peer-checked:border-secondary/50"
-          for="basique">
-          Basique
-        </label>
-      </div>
-      <div class="w-full flex">
-        <input class="hidden peer" type="radio" name="price" id="croissance" />
-        <label
-          class="p-2 sm:p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-lg border peer-checked:border-secondary/50"
-          for="croissance">
-          Croissance
-        </label>
-      </div>
-      <div class="w-full flex">
-        <input class="hidden peer" type="radio" name="price" id="avance" />
-        <label
-          class="p-2 sm:p-[10px] border-primary-dark/30 w-full cursor-pointer transition font-medium text-primary peer-checked:font-bold peer-checked:text-primary peer-checked:bg-primary/10 rounded-lg border peer-checked:border-primary/50"
-          for="avance">
-          Avancé
-        </label>
-      </div>
-      <div class="w-full flex">
-        <input class="hidden peer" type="radio" name="price" id="Entreprise" />
-        <label
-          class="p-2 sm:p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-lg border peer-checked:border-secondary/50"
-          for="Entreprise">
-          Entreprise
-        </label>
-      </div>
-    </form> -->
-    <div class="grid grid-cols-4 gap-4 mt-8 lg:mt-14 lg:gap-9">
-      {
-        plansData.map(plan => {
-          const { title, description, price, functions, features } = plan;
-          const isPremium = title === "Plan Avancé";
-          return (
-            <div
-              class={cn(
-                " border-2 relative rounded-lg py-6 lg:py-10 pt-8 lg:pt-12 lg:rounded-2xl text-secondary-dark-hover border-border flex flex-col gap-4",
-                { "border-primary text-primary": isPremium }
-              )}>
-              <p
-                class={cn(
-                  "absolute -top-5 right-1/2 translate-x-1/2 opacity-0 z-10 text-white bg-primary py-2 px-4 font-semibold tracking-wide rounded-full hidden",
-                  {
-                    "block opacity-100": isPremium,
-                  }
-                )}>
-                Recommandé
-              </p>
-              <div class="flex flex-col gap-2 px-4 lg:px-6 ">
-                <p
-                  class={cn(
-                    "text-secondary-darker text-xl lg:text-2xl font-bold tracking-wide",
-                    {
-                      "text-primary": isPremium,
-                    }
-                  )}>
-                  {title}{" "}
-                </p>
-                <Paragraph className="!text-lg"> {description} </Paragraph>
-                <div class="my-2 lg:my-4 flex justify-center items-end gap-[2px] p-1">
-                  <p class={cn("text-3xl  lg:text-5xl font-bold")}>{price}</p>
-                  <p class="font-extrabold text-2xl lg:text-3xl">$</p>
-                  <p class="text-[#B3B3B3] text-base">/ Par Mois</p>
-                </div>
-              </div>
-              <p class="w-full h-[1px] my-4 bg-border" />
-              <div class="flex flex-col h-full gap-4 px-4 lg:px-6 lg:pr-3">
-                {features.map(item =>
-                  item.title === "end" ? (
-                    <p class="h-5" />
-                  ) : (
-                    <div class="grid grid-cols-[auto_1fr] gap-2">
-                      <p
-                        class={cn(
-                          "h-5 aspect-square text-base flex items-center justify-center rounded-full bg-secondary",
-                          {
-                            "bg-primary": isPremium,
-                          }
-                        )}>
-                        <Icon name="check" />
-                      </p>
-                      <p
-                        class={cn(
-                          "flex flex-col text-secondary-dark-hover font-medium items-start text-start"
-                        )}>
-                        {item.title}
 
-                        {item.subtitle && (
-                          <span class="text-sm text-gray-500">
-                            {item.subtitle}{" "}
-                          </span>
-                        )}
-                      </p>
-                    </div>
-                  )
-                )}
-
-                <Button
-                  action="contact"
-                  color={isPremium ? "primary" : "secondary"}
-                  className="!mt-auto">
-                  Contacter Sales
-                </Button>
-              </div>
-            </div>
-          );
-        })
-      }
+    <div class="hidden lg:block">
+      <PricingV1TableDesktop />
+    </div>
+    <div class="block lg:hidden">
+      <PricingV1Label />
+      <PricingV1TableMobile />
     </div>
   </div>
 </Container>

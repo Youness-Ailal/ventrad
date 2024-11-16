@@ -45,6 +45,19 @@ details > summary::-webkit-details-marker {
 .toast.show {
   opacity: 1;
   display: flex;
+  transition: 0.1s ease allow-discrete;
+}
+
+.plan-item {
+  opacity: 0;
+  translate: 20px 0;
+  display: none;
+  transition: 0.2s allow-discrete;
+}
+.plan-item.selected {
+  opacity: 1 ;
+  translate: 0 0;
+  display: flex;
   transition: 0.2s ease allow-discrete;
 }
 @starting-style {
@@ -52,6 +65,10 @@ details > summary::-webkit-details-marker {
     opacity: 0;
   }
   .toast.show {
+    opacity: 0;
+  }
+  .plan-item.selected {
+    translate: 20px 0;
     opacity: 0;
   }
 }

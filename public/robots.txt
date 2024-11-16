@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https:ventrad.co>/sitemap-index.xml
