@@ -26,7 +26,7 @@ export const functionalitiesData = [
   },
   {
     title: "Application mobile",
-    text: "Offrez à vos clients la commodité de commander directement depuis leur smartphone.",
+    text: "Offrez à vos clients la commodité de commander directement depuis leur smartphone. (sur mesure)",
     icon: "mobileapp",
   },
   {
@@ -197,7 +197,7 @@ export const plansData = [
   {
     title: "Plan Avancé",
     description: "Conçu pour grandes entreprises et marketplaces",
-    price: "150",
+    price: "200",
     features: [
       {
         title: "Dashboard",
@@ -272,7 +272,7 @@ export const plansData = [
   {
     title: "Plan Entreprise",
     description: "Conçu pour grandes entreprises B2B/B2C",
-    price: "200",
+    price: "500",
     features: [
       {
         title: "Dashboard",
