@@ -363,26 +363,51 @@ interface faqItem {
   answer: string;
 }
 
-export const questions: faqItem[] = [
+export const questions = [
   {
-    question: "En combien de temps puis-je commencer ?",
+    question: "Qu'est-ce que Ventrad ?",
     answer:
-      "Démarrer avec Ventrade est rapide et facile ! Une fois inscrit, vous pouvez créer votre compte, ajouter des produits et commencer à gérer vos commandes en quelques minutes.",
+      "Ventrad est une plateforme e-commerce conçue pour les entreprises opérant en B2B, B2C, ou les deux. Elle offre des outils puissants pour digitaliser et gérer l'ensemble du processus de vente, incluant gestion des produits, CRM intégré, reporting avancé, et bien plus.",
   },
   {
-    question: "Quelle est votre politique d'annulation ?",
+    question: "Quels types d'entreprises peuvent utiliser Ventrad ?",
     answer:
-      "Vous pouvez annuler votre compte à tout moment. Nous vous recommandons de consulter nos conditions générales pour les détails sur les remboursements et les processus d'annulation",
+      "Ventrad est idéal pour les fabricants, grossistes, et détaillants qui souhaitent optimiser leurs opérations de vente en ligne, que ce soit pour le commerce de gros ou de détail.",
   },
   {
-    question: "Mes données sont-elles sécurisées avec Ventrad ?",
+    question: "Ventrad propose-t-il des options de personnalisation ?",
     answer:
-      "Oui, la sécurité de vos données est une priorité pour nous. Ventrad utilise des protocoles de sécurité avancés pour protéger vos informations et garantir leur confidentialité.",
+      "Oui, Ventrad offre des solutions sur mesure, avec la possibilité de personnaliser les fonctionnalités en fonction des besoins spécifiques de votre entreprise.",
   },
   {
-    question: "Ai-je besoin de compétences techniques pour utiliser Ventrad ?",
+    question: "Quels sont les avantages de Ventrad pour le B2B ?",
     answer:
-      "Non, Ventrad est conçu pour être accessible à tous, même sans compétences techniques. L'interface intuitive permet de gérer facilement vos produits et commandes.",
+      "● Gestion simplifiée des commandes en gros<br/>● Accès à des tarifs personnalisés pour chaque client<br/● Fonctionnalités avancées de CRM pour renforcer les relations client",
+  },
+  {
+    question: "Et pour le B2C ?",
+    answer:
+      "● Une expérience utilisateur fluide pour vos clients finaux<br/>● Système de fidélisation intégré pour améliorer la rétention<br/>● Paiements en ligne sécurisés",
+  },
+  {
+    question: "Est-il possible d’intégrer Ventrad avec d’autres logiciels ?",
+    answer:
+      "Absolument ! Ventrad peut être intégré avec vos logiciels existants, comme les ERP, CRM externes, ou plateformes de paiement.",
+  },
+  {
+    question: "Proposez-vous une application mobile ?",
+    answer:
+      "Oui, Ventrad inclut une application mobile permettant à vos clients de passer des commandes facilement, directement depuis leur smartphone.",
+  },
+  {
+    question: "Comment puis-je commencer à utiliser Ventrad ?",
+    answer:
+      "Il vous suffit de nous contacter pour discuter de vos besoins. Nous vous guiderons dans chaque étape, de l’installation à la personnalisation de votre plateforme.",
+  },
+  {
+    question: "Offrez-vous un support après-vente ?",
+    answer:
+      "Oui, nous proposons un service après-vente complet incluant maintenance, mises à jour, et assistance technique pour garantir le bon fonctionnement de votre plateforme.",
   },
 ];
 

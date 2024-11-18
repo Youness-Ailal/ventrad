@@ -22,9 +22,9 @@ import { Icon } from "astro-icon/components";
               name={"arrow"}
             />
           </summary>
-          <p class="p-3  lg:p-6 pt-2 pl-0 ml-4 max-w-[100ch] text-lg border-t border-secondary-darker/20">
-            {item.answer}{" "}
-          </p>
+          <p
+            set:html={item.answer}
+            class="p-3  lg:p-6 pt-2 pl-0 ml-4 max-w-[100ch] text-lg border-t border-secondary-darker/20"></p>
         </details>
       ))
     }
