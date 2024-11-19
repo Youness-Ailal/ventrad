@@ -20,30 +20,34 @@ export const navLinks = [
     >
   </div>
   <div
-    class="p-4 lg:p-6 mb-2 max-w-1400 mx-auto flex items-center justify-between gap-4 text-secondary-dark">
+    class="p-4 lg:p-6 mb-2 max-w-1400 mx-auto flex items-center justify-between gap-2 sm:gap-4 text-secondary-dark">
     <a href="/">
-      <img src={logotext} class="max-h-5 sm:max-h-7" alt="Ventrad" />
+      <img src={logotext} class="max-h-4 sm:max-h-7" alt="Ventrad" />
     </a>
-    <nav class="flex items-center gap-4 lg:gap-6 max-[1050px]:hidden">
-      {
-        navLinks?.map(item => (
-          <a
-            data-navlink
-            class="font-medium transition relative group aria-current:font-semibold aria-current:text-primary "
-            href={item.href}>
-            {item.label}
-            <p class="absolute h-[6px] opacity-0 transition group-aria-current:opacity-100 aspect-square rounded-full bg-primary -bottom-1 left-1/2 -translate-x-1/2" />
-          </a>
-        ))
-      }
+    <nav aria-label="breadcrumb">
+      <ol class="flex items-center gap-2 max-[1100px]:hidden">
+        {
+          navLinks?.map(item => (
+            <li>
+              <a
+                data-navlink
+                class="font-medium px-2 py-1 transition relative group aria-current:font-semibold aria-current:text-primary "
+                href={item.href}>
+                {item.label}
+                <p class="absolute h-[6px] opacity-0 transition group-aria-current:opacity-100 aspect-square rounded-full bg-primary -bottom-1 left-1/2 -translate-x-1/2" />
+              </a>
+            </li>
+          ))
+        }
+      </ol>
     </nav>
     <div class="flex items-center gap-4">
       <button
-        class="font-medium hover:underline underline-offset-2 max-[1050px]:hidden go-watch-trial"
+        class="font-medium hover:underline underline-offset-2 max-[1100px]:hidden go-watch-trial"
         >Regarder Free Trial</button
       >
       <Button action="contact">Obtenir Une Démo</Button>
-      <button class="flex-col menu-btn gap-[6px] ml-2 hidden max-[1050px]:flex">
+      <button class="flex-col menu-btn gap-[6px] ml-2 hidden max-[1100px]:flex">
         <p class="h-[3px] w-8 rounded-full bg-secondary"></p>
         <p class="h-[3px] w-5 rounded-full bg-secondary"></p>
         <p class="h-[3px] w-8 rounded-full bg-secondary"></p>

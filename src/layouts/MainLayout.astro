@@ -13,7 +13,7 @@ const {
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.jpg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="sitemap" href="/sitemap-0.xml" />
     <style>
@@ -39,6 +39,7 @@ const {
 </html>
 
 <script>
+  import axios from "axios";
   const mobileMenu = document.querySelector(".mobile-menu") as HTMLElement;
   const mobileMenuBtn = document.querySelector(".menu-btn");
   const mobileMenuBtnClose = document.querySelector(".menu-btn-close");
@@ -51,6 +52,7 @@ const {
   const form = document.querySelector("#contact-us") as HTMLFormElement;
   const watchTrialBtns = document.querySelectorAll(".go-watch-trial");
   const videoSection = document.querySelector(".video-section") as HTMLElement;
+  const sendContactBtn = document.querySelector(".send-contact-btn");
 
   // Hide show contact modal
   const showModal = () => {
@@ -83,19 +85,43 @@ const {
   const hideToast = () => toast.classList.remove("show");
   const showToast = () => toast.classList.add("show");
 
-  form.addEventListener("submit", e => {
+  form.addEventListener("submit", async e => {
     e.preventDefault();
     const formData = new FormData(form);
 
-    const data = [...formData.entries()];
-    console.log(formData.get("first_name"));
-
-    if (true) {
+    const nom = formData.get("last_name");
+    const prenom = formData.get("first_name");
+    const phone = formData.get("phone");
+    const email = formData.get("email");
+    const entreprise = formData.get("company");
+    const data = {
+      service_id: "service_kabbjuu",
+      template_id: "template_eqpnega",
+      user_id: "w7WT0mi99cTPE-1So",
+      template_params: {
+        full_name: `${prenom} ${nom}`,
+        nom,
+        prenom,
+        phone,
+        email,
+        entreprise,
+      },
+    };
+    try {
+      sendContactBtn.classList.add("loading");
+      sendContactBtn.setAttribute("disabled", "true");
+      await axios.post("https://api.emailjs.com/api/v1.0/email/send", data);
+    } catch (error) {
+      console.log(error);
+    } finally {
       hideModal();
       showToast();
       setTimeout(() => {
         hideToast();
       }, 3000);
+      sendContactBtn.classList.remove("loading");
+      sendContactBtn.removeAttribute("disabled");
+      form.reset();
     }
   });
 
