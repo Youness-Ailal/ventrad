@@ -90,7 +90,7 @@ export const plansData = [
       },
       {
         title: "Offers",
-        subtitle: "",
+        subtitle: "Limité à 2 offres ",
       },
       {
         title: "Clients B2C",
@@ -98,11 +98,11 @@ export const plansData = [
       },
       {
         title: "Distributeurs/revendeurs B2B",
-        subtitle: "",
+        subtitle: "Limité à 5 (revendeurs) ",
       },
       {
         title: "L'équipe",
-        subtitle: "",
+        subtitle: "Limité à 2 (Manager Salesperson)",
       },
       {
         title: "Chat pour les vendeurs",
@@ -122,11 +122,11 @@ export const plansData = [
       },
       {
         title: "Ventes par mois",
-        subtitle: "",
+        subtitle: "(Illimité)",
       },
       {
         title: "Niveaux de prix pour les revendeurs/distributeurs",
-        subtitle: "",
+        subtitle: "Deux / Revendeurs",
       },
     ],
     functions: [],
@@ -150,7 +150,7 @@ export const plansData = [
       },
       {
         title: "Offers",
-        subtitle: "",
+        subtitle: "Limité à 5 offres ",
       },
       {
         title: "Clients B2C",
@@ -158,11 +158,11 @@ export const plansData = [
       },
       {
         title: "Distributeurs/revendeurs B2B",
-        subtitle: "",
+        subtitle: "Limité à 10 (Revendeurs /Distributeurs) ",
       },
       {
         title: "L'équipe",
-        subtitle: "",
+        subtitle: "Limité à 3 ( Manager/Gestionnaire de commande/Salesperson)",
       },
       {
         title: "Chat pour les vendeurs",
@@ -182,11 +182,11 @@ export const plansData = [
       },
       {
         title: "Ventes par mois",
-        subtitle: "",
+        subtitle: "(Illimité)",
       },
       {
         title: "Niveaux de prix pour les revendeurs/distributeurs",
-        subtitle: "",
+        subtitle: "Deux / Revendeurs, distributeurs ",
       },
       {
         title: "Édition des bons de commande/facturation",
@@ -213,7 +213,7 @@ export const plansData = [
       },
       {
         title: "Offers",
-        subtitle: "",
+        subtitle: "Limité à 10 offres ",
       },
       {
         title: "Clients B2C",
@@ -221,11 +221,11 @@ export const plansData = [
       },
       {
         title: "Distributeurs/revendeurs B2B",
-        subtitle: "",
+        subtitle: "Limité à 20 (revendeurs/distributeurs)",
       },
       {
         title: "L'équipe",
-        subtitle: "",
+        subtitle: "Limité à 4 ( Manager/Gestionnaire de commande/Salesperson)",
       },
       {
         title: "Chat pour les vendeurs",
@@ -245,11 +245,11 @@ export const plansData = [
       },
       {
         title: "Ventes par mois",
-        subtitle: "",
+        subtitle: "(Illimité)",
       },
       {
         title: "Niveaux de prix pour les revendeurs/distributeurs",
-        subtitle: "",
+        subtitle: "Trois / Revendeurs, distributeurs",
       },
       {
         title: "Édition des bons de commande/facturation",
@@ -257,7 +257,8 @@ export const plansData = [
       },
       {
         title: "Messages entre l'équipe",
-        subtitle: "",
+        subtitle:
+          "",
       },
       {
         title: "Gestion des tâches pour Salesperso",
@@ -288,7 +289,7 @@ export const plansData = [
       },
       {
         title: "Offers",
-        subtitle: "",
+        subtitle: "(Illimité)",
       },
       {
         title: "Clients B2C",
@@ -296,11 +297,11 @@ export const plansData = [
       },
       {
         title: "Distributeurs/revendeurs B2B",
-        subtitle: "",
+        subtitle: "Illimité (Revendeurs / Distributeurs)",
       },
       {
         title: "L'équipe",
-        subtitle: "",
+        subtitle: "Unlimited, all roles and unlimited members",
       },
       {
         title: "Chat pour les vendeurs",
@@ -320,11 +321,11 @@ export const plansData = [
       },
       {
         title: "Ventes par mois",
-        subtitle: "",
+        subtitle: "(Illimité)",
       },
       {
         title: "Niveaux de prix pour les revendeurs/distributeurs",
-        subtitle: "",
+        subtitle: "Illimité / Revendeurs, distributeurs",
       },
       {
         title: "Édition des bons de commande/facturation",

@@ -4,6 +4,7 @@ import Button from "./Button.astro";
 import { Icon } from "astro-icon/components";
 import Paragraph from "./Paragraph.astro";
 import { plansData } from "@/utils/constants";
+import SubTitle from "./SubTitle.astro";
 ---
 
 <div class="grid grid-cols-4 gap-4 mt-8 lg:mt-14 lg:gap-9">
@@ -61,20 +62,26 @@ import { plansData } from "@/utils/constants";
                   </p>
                   <p
                     class={cn(
-                      "flex flex-col text-secondary-dark-hover font-medium items-start text-start"
+                      "flex gap-2 justify-between text-secondary-dark-hover font-medium items-start text-start"
                     )}>
                     {item.title}
 
                     {item.subtitle && (
+                      <abbr title={item.subtitle} class="flex items-center justify-center rounded-full text-white h-4 text-xs cursor-pointer aspect-square bg-[#8D8D8D]">
+                        !
+                      </abbr>
+                    )}
+
+                    {/* {item.subtitle && (
                       <span class="text-sm text-gray-500">
                         {item.subtitle}{" "}
                       </span>
-                    )}
+                    )} */}
                   </p>
                 </div>
               )
             )}
-
+            <div class="my-4" />
             <Button
               action="contact"
               color={isPremium ? "primary" : "secondary"}
