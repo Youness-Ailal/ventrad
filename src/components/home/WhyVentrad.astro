@@ -5,8 +5,11 @@ import Title from "../ui/Title.astro";
 import Paragraph from "../ui/Paragraph.astro";
 import Button from "../ui/Button.astro";
 import mac from "@assets/macStudio.jpg?url";
-import { whyVentradData } from "@/utils/constants";
 import { Icon } from "astro-icon/components";
+import { t } from "i18next";
+const whyVentradData: Array<any> = t("benefits.whyVentrad", {
+  returnObjects: true,
+});
 ---
 
 <Container>
@@ -14,11 +17,10 @@ import { Icon } from "astro-icon/components";
     class="grid max-w-1400 mx-auto grid-cols-1 min-[800px]:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] justify-between gap-6 md:gap-14 lg:gap-16">
     <div
       class="flex flex-col items-start max-[800px]:order-2 gap-3 p-2 lg:p-6 w-[min(1400px,100%)] mx-auto">
-      <UpperTitle>Les bénéfices</UpperTitle>
-      <Title>Pourquoi choisir Ventrad ?</Title>
+      <UpperTitle>{t("benefits.upperTitle")}</UpperTitle>
+      <Title>{t("benefits.title")}</Title>
       <Paragraph>
-        Ventrad n’est pas une simple plateforme de vente. C’est un outil
-        stratégique pour votre croissance.
+        {t("benefits.paragraph")}
       </Paragraph>
       <div class="my-5 lg:my-8 flex flex-col gap-4 lg:gap-6">
         {

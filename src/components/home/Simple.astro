@@ -4,22 +4,20 @@ import Container from "../ui/Container.astro";
 import Paragraph from "../ui/Paragraph.astro";
 import Title from "../ui/Title.astro";
 import UpperTitle from "../ui/UpperTitle.astro";
+import { t } from "i18next";
 ---
 
 <Container>
   <div class="flex flex-col gap-2 items-center justify-center">
-    <UpperTitle>Simplifiez la Vente. </UpperTitle>
-    <Title>Accélérez la Croissance.</Title>
+    <UpperTitle>{t("simple.upperTitle")}</UpperTitle>
+    <Title>{t("simple.title")}</Title>
     <div class="my-4">
       <Paragraph>
-        Transformez vos processus de vente en ligne avec une solution e-commerce
-        entièrement<br />
-        personnalisée, conçue pour répondre aux besoins spécifiques de votre entreprise.
+        {t("simple.paragraph")}
       </Paragraph>
     </div>
     <div class="mt-5">
-
-      <Button action="contact">Commencez avec nous</Button>
+      <Button action="contact">{t("action.start")}</Button>
     </div>
   </div>
 </Container>

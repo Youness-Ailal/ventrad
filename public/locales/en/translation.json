@@ -1,0 +1,326 @@
+{
+  "home": {
+    "title": "Ventrad | Order and Sales Management Solution",
+    "description": "Effortlessly manage your inventory, orders, and clients on the web and mobile. Increase your sales and grow your business with Ventrad's all-in-one e-commerce solution."
+  },
+  "header": {
+    "message": "Do you have questions or need more information? We are here to help."
+  },
+  "navlinks": [
+    { "label": "Home", "href": "/en" },
+    { "label": "Features", "href": "/en/functions" },
+    { "label": "About Us", "href": "/en/about" },
+    { "label": "Pricing", "href": "/en/pricing" },
+    { "label": "Blog", "href": "/en/blog" }
+  ],
+  "choose": {
+    "title": "Choose Ventrad to Accelerate Your Growth!",
+    "paragraph": "By combining powerful tools with an intuitive user interface, Ventrad simplifies your work while maximizing your sales. No more complex platforms requiring weeks of integration.<br/><br/>Join hundreds of businesses using Ventrad to accelerate their digital transformation and enhance customer satisfaction.<br/><br/>Don’t settle for an average solution. Switch to Ventrad and accelerate your growth today!"
+  },
+  "simple": {
+    "upperTitle": "Simplify Selling.",
+    "title": "Accelerate Growth.",
+    "paragraph": "Transform your online sales processes with a fully customized e-commerce solution designed to meet your business's specific needs."
+  },
+
+  "hero": {
+    "upperTitle": "The complete solution to manage orders and grow sales",
+    "title": { "1": "Boost Your Wholesale", "2": "Business with Ventrad" },
+    "description": "Effortlessly manage your inventory, orders, and clients on the web and mobile. Increase your sales and grow your business with Ventrad's all-in-one e-commerce solution.",
+    "stats": [
+      {
+        "title": "+25% Revenue",
+        "text": "On average for B2B/B2C <br/> e-commerce companies.",
+        "icon": "increase"
+      },
+      {
+        "title": "-50% Costs",
+        "text": "Thanks to process <br/> automation.",
+        "icon": "coins"
+      },
+      {
+        "title": "70% of B2B Buyers",
+        "text": "Prefer ordering <br/> online.",
+        "icon": "sale"
+      },
+      {
+        "title": "80% of Companies",
+        "text": "Notice improved <br/> customer satisfaction.",
+        "icon": "company"
+      }
+    ]
+  },
+  "engage": {
+    "upperTitle": "Ventrad",
+    "title": "Our Commitment",
+    "paragraph": "At Ventrad, we don’t just create platforms, we build partnerships. Our team of experts is dedicated to providing a solution that not only meets your current needs but also lays the foundation for your future success.\n\nReady to revolutionize your online presence? Contact us today to start your custom project."
+  },
+  "demo": {
+    "title": "Discover Ventrad in Action",
+    "paragraph": "Watch a quick demo of the Ventrad solution"
+  },
+  "features": {
+    "upperTitle": "Key Features",
+    "title": "All-in-one platform for <br/> your wholesale and retail business"
+  },
+  "demoRequest": {
+    "upperTitle": "Start Now",
+    "title": "Request a Demo",
+    "paragraph": "See Ventrad in action with a live demo."
+  },
+  "action": {
+    "sales": "Contact Sales",
+    "demo": "Get a Demo",
+    "join": "Join Us",
+    "more": "Learn More",
+    "contact": "Contact us",
+    "watch_trial": "Watch Free Trial",
+    "start": "Get Started with Us",
+    "commance": "Get Started"
+  },
+
+  "functionalities": [
+    {
+      "title": "B2B/B2C Platform",
+      "text": "Ecommerce sales platform for B2B/B2C brands and wholesale distributors.",
+      "icon": "b2bb2c"
+    },
+    {
+      "title": "Complete Customization",
+      "text": "An adaptable design for a unique and personalized online experience.",
+      "icon": "customization"
+    },
+    {
+      "title": "Multi-channel Management",
+      "text": "Offer your resellers tailored pricing to meet their needs.",
+      "icon": "multichannel"
+    },
+    {
+      "title": "Dynamic Pricing",
+      "text": "Provide your resellers with dynamic pricing adapted to their requirements.",
+      "icon": "dynamicpricing"
+    },
+    {
+      "title": "Easy Tool Integration",
+      "text": "Quick and easy connection to your ERP, CRM, and other systems.",
+      "icon": "easyintegration"
+    },
+    {
+      "title": "Mobile Application",
+      "text": "Offer your customers the convenience of ordering directly from their smartphones. (customizable)",
+      "icon": "mobileapp"
+    },
+    {
+      "title": "Optimized Performance",
+      "text": "Platform optimized for high traffic and smooth user experience.",
+      "icon": "optimizedperformance"
+    },
+    {
+      "title": "Dedicated Technical Support",
+      "text": "Priority and personalized assistance to meet your ongoing needs.",
+      "icon": "technicalsupport"
+    },
+    {
+      "title": "Automation",
+      "text": "Centralize and automate your order flows to save time.",
+      "icon": "automation"
+    },
+    {
+      "title": "Real-time Stock",
+      "text": "Track your inventory accurately to avoid shortages or overstock.",
+      "icon": "realtimestock"
+    },
+    {
+      "title": "Integrated Loyalty Programs",
+      "text": "Build customer loyalty with personalized rewards.",
+      "icon": "loyaltyprogram"
+    },
+    {
+      "title": "Live Chat",
+      "text": "Engage your customers and respond instantly to their questions.",
+      "icon": "livechat"
+    }
+  ],
+  "benefits": {
+    "upperTitle": "The Benefits",
+    "title": "Why Choose Ventrad?",
+    "paragraph": "Ventrad is not just a sales platform. It’s a strategic tool for your growth.",
+    "whyVentrad": [
+      "Centralize all your sales operations on a single platform.",
+      "Easily adapt your platform to your business growth.",
+      "Benefit from personalized support and 24/7 technical assistance.",
+      "Create an online store that perfectly reflects your vision and brand identity.",
+      "Increase your sales and operational efficiency with a tailored solution."
+    ]
+  },
+  "plans": {
+    "upperTitle": "Plans",
+    "title": "Flexible plans for every wholesaler and retailer",
+    "paragraph": "Ventrad offers four pricing plans tailored<br/> to the diverse needs of businesses",
+    "data": [
+      {
+        "title": "Basic Plan",
+        "description": "Ideal for small B2B/B2C businesses",
+        "price": "47",
+        "features": [
+          { "title": "Dashboard", "subtitle": "" },
+          { "title": "Orders", "subtitle": "" },
+          { "title": "Products", "subtitle": "" },
+          { "title": "Offers", "subtitle": "Limited to 2 offers" },
+          { "title": "B2C Clients", "subtitle": "" },
+          {
+            "title": "B2B Distributors/Resellers",
+            "subtitle": "Limited to 5 resellers"
+          },
+          {
+            "title": "Team",
+            "subtitle": "Limited to 2 (Manager, Salesperson)"
+          },
+          { "title": "Seller Chat", "subtitle": "" },
+          { "title": "Layout Settings", "subtitle": "" },
+          { "title": "Hidden Prices", "subtitle": "" },
+          { "title": "Multiple Currencies", "subtitle": "" },
+          { "title": "Monthly Sales", "subtitle": "(Unlimited)" },
+          {
+            "title": "Pricing Levels for Distributors/Resellers",
+            "subtitle": "Two / Resellers"
+          }
+        ],
+        "functions": []
+      },
+      {
+        "title": "Growth Plan",
+        "description": "Ideal for small and medium B2B/B2C businesses",
+        "price": "77",
+        "features": [
+          { "title": "Dashboard", "subtitle": "" },
+          { "title": "Orders", "subtitle": "" },
+          { "title": "Products", "subtitle": "" },
+          { "title": "Offers", "subtitle": "Limited to 5 offers" },
+          { "title": "B2C Clients", "subtitle": "" },
+          {
+            "title": "B2B Distributors/Resellers",
+            "subtitle": "Limited to 10 resellers/distributors"
+          },
+          {
+            "title": "Team",
+            "subtitle": "Limited to 3 (Manager, Order Manager, Salesperson)"
+          },
+          { "title": "Seller Chat", "subtitle": "" },
+          { "title": "Layout Settings", "subtitle": "" },
+          { "title": "Hidden Prices", "subtitle": "" },
+          { "title": "Multiple Currencies", "subtitle": "" },
+          { "title": "Monthly Sales", "subtitle": "(Unlimited)" },
+          {
+            "title": "Pricing Levels for Distributors/Resellers",
+            "subtitle": "Two / Resellers, distributors"
+          },
+          { "title": "Invoice and Order Editing", "subtitle": "" }
+        ]
+      },
+      {
+        "title": "Advanced Plan",
+        "description": "Designed for large enterprises and marketplaces",
+        "price": "200",
+        "features": [
+          { "title": "Dashboard", "subtitle": "" },
+          { "title": "Orders", "subtitle": "" },
+          { "title": "Products", "subtitle": "" },
+          { "title": "Offers", "subtitle": "Limited to 10 offers" },
+          { "title": "B2C Clients", "subtitle": "" },
+          {
+            "title": "B2B Distributors/Resellers",
+            "subtitle": "Limited to 20 resellers/distributors"
+          },
+          {
+            "title": "Team",
+            "subtitle": "Limited to 4 (Manager, Order Manager, Salesperson)"
+          },
+          { "title": "Seller Chat", "subtitle": "" },
+          { "title": "Layout Settings", "subtitle": "" },
+          { "title": "Hidden Prices", "subtitle": "" },
+          { "title": "Multiple Currencies", "subtitle": "" },
+          { "title": "Monthly Sales", "subtitle": "(Unlimited)" },
+          {
+            "title": "Pricing Levels for Distributors/Resellers",
+            "subtitle": "Three / Resellers, distributors"
+          },
+          { "title": "Invoice and Order Editing", "subtitle": "" },
+          { "title": "Team Messaging", "subtitle": "" },
+          { "title": "Task Management for Salesperson", "subtitle": "" },
+          { "title": "White Label", "subtitle": "" }
+        ]
+      },
+      {
+        "title": "Enterprise Plan",
+        "description": "Designed for large B2B/B2C enterprises",
+        "price": "500",
+        "features": [
+          { "title": "Dashboard", "subtitle": "" },
+          { "title": "Orders", "subtitle": "" },
+          { "title": "Products", "subtitle": "" },
+          { "title": "Offers", "subtitle": "(Unlimited)" },
+          { "title": "B2C Clients", "subtitle": "" },
+          {
+            "title": "B2B Distributors/Resellers",
+            "subtitle": "Unlimited (resellers/distributors)"
+          },
+          {
+            "title": "Team",
+            "subtitle": "Unlimited, all roles and unlimited members"
+          },
+          { "title": "Seller Chat", "subtitle": "" },
+          { "title": "Layout Settings", "subtitle": "" },
+          { "title": "Hidden Prices", "subtitle": "" },
+          { "title": "Multiple Currencies", "subtitle": "" },
+          { "title": "Monthly Sales", "subtitle": "(Unlimited)" },
+          {
+            "title": "Pricing Levels for Distributors/Resellers",
+            "subtitle": "Unlimited / Resellers, distributors"
+          },
+          { "title": "Invoice and Order Editing", "subtitle": "" },
+          { "title": "Team Messaging", "subtitle": "" },
+          { "title": "Task Management for Salesperson", "subtitle": "" },
+          { "title": "White Label", "subtitle": "" },
+          { "title": "Task Management for Content Manager", "subtitle": "" },
+          { "title": "POS Management", "subtitle": "" },
+          { "title": "Barcode Scanner", "subtitle": "" }
+        ]
+      }
+    ],
+    "month": "Per Month",
+    "recommand": "Recommanded"
+  },
+  "contactForm": {
+    "headerTitle": "Contact Our<br/> Sales Team",
+    "closeButton": "Close",
+    "description": "Fill out the form below and one of our experts will contact you quickly to discuss your needs.",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "company": {
+        "label": "Company Name",
+        "optional": "(Optional)"
+      }
+    },
+    "submitButton": "Send",
+    "toastMessage": "Contact details received"
+  },
+  "footer": {
+    "stayInformed": "Stay informed with Ventrad",
+    "emailSubscribe": "Receive tips, updates, and promotions by email",
+    "sections": {
+      "pages": "Pages",
+      "contact": "Contact",
+      "socialMedia": "Social Media"
+    },
+    "copyright": "Ventrad Private Ltd. All rights reserved",
+    "links": {
+      "terms": "Terms of Use",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "readyToUse": "Ready to use"
+  }
+}

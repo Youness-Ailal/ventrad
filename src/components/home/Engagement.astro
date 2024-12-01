@@ -5,6 +5,7 @@ import Title from "../ui/Title.astro";
 import Paragraph from "../ui/Paragraph.astro";
 import Button from "../ui/Button.astro";
 import logo from "@assets/logos/logo.svg?url";
+import { t } from "i18next";
 ---
 
 <Container>
@@ -13,16 +14,11 @@ import logo from "@assets/logos/logo.svg?url";
     <div
       class="flex flex-col items-start gap-3 p-2 lg:p-6 w-[min(1400px,100%)] mx-auto">
       <UpperTitle>Ventrad</UpperTitle>
-      <Title>Notre Engagement</Title>
+      <Title>{t("engage.title")}</Title>
       <Paragraph>
-        Chez Ventrad, nous ne créons pas simplement des plateformes, nous
-        construisons des partenariats. Notre équipe d'experts s'engage à fournir
-        une solution qui non seulement répond à vos besoins actuels, mais qui
-        pose également les bases de votre succès futur.<br /><br />
-        Prêt à révolutionner votre présence en ligne ? Contactez-nous dès aujourd'hui
-        pour démarrer votre projet sur mesure.
+        {t("engage.paragraph")}
       </Paragraph>
-      <Button action="contact" className="mt-4 lg:mt-7">Rejoignez-nous</Button>
+      <Button action="contact" className="mt-4 lg:mt-7">{t("action.join")}</Button>
     </div>
     <div class="max-[900px]:hidden">
       <img loading="lazy" src={logo} alt="logo" class="h-full w-full" />

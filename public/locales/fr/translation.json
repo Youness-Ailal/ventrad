@@ -1,0 +1,481 @@
+{
+  "home": {
+    "title": "Ventrad | Solution de gestion des commandes et ventes",
+    "description": "Gérez sans effort vos stocks, vos commandes et vos clients sur le web et sur mobile. Augmentez vos ventes et développez votre activité avec la solution e-commerce tout-en-un de Ventrad."
+  },
+  "header": {
+    "message": "Vous avez des questions ou besoin de plus d'informations ? Nous sommes là pour vous aider."
+  },
+  "navlinks": [
+    { "label": "Accueil", "href": "/" },
+    { "label": "Fonctionnalités", "href": "/functions" },
+    { "label": "À Propos de Nous", "href": "/about" },
+    { "label": "Tarification", "href": "/pricing" },
+    { "label": "Blog", "href": "/blog" }
+  ],
+  "hero": {
+    "upperTitle": "La solution complète pour gérer les commandes et développer les ventes",
+    "title": { "1": "Boostez votre commerce", "2": "de gros avec Ventrad" },
+    "description": "Gérez sans effort vos stocks, vos commandes et vos clients sur le web et sur mobile. Augmentez vos ventes et développez votre activité avec la solution e-commerce tout-en-un de Ventrad.",
+    "stats": [
+      {
+        "title": "+25% de CA",
+        "text": "En moyenne pour les entreprises <br/> e-commerce B2B/B2C.",
+        "icon": "increase"
+      },
+      {
+        "title": "-50% des coûts",
+        "text": "Grâce à l'automatisation des <br/> processus.",
+        "icon": "coins"
+      },
+      {
+        "title": "70% des acheteurs B2B",
+        "text": "Préfèrent commander <br/> en ligne.",
+        "icon": "sale"
+      },
+      {
+        "title": "80% des entreprises",
+        "text": "Constatent une meilleure <br/> satisfaction client.",
+        "icon": "company"
+      }
+    ]
+  },
+  "choose": {
+    "title": "Choisissez Ventrad pour Accélérer Votre Croissance !",
+    "paragraph": "En combinant des outils puissants et une interface utilisateur intuitive, Ventrad simplifie votre travail tout en maximisant vos ventes. Fini les plateformes complexes qui nécessitent des semaines d’intégration.<br/><br/>Rejoignez des centaines d’entreprises qui utilisent Ventrad pour accélérer leur transformation digitale et améliorer la satisfaction client.<br/><br/>Ne vous contentez pas d'une solution moyenne. Passez à Ventrad et accélérez votre croissance dès aujourd'hui !"
+  },
+  "simple": {
+    "upperTitle": "Simplifiez la Vente.",
+    "title": "Accélérez la Croissance.",
+    "paragraph": "Transformez vos processus de vente en ligne avec une solution e-commerce entièrement personnalisée, conçue pour répondre aux besoins spécifiques de votre entreprise."
+  },
+  "engage": {
+    "upperTitle": "Ventrad",
+    "title": "Notre Engagement",
+    "paragraph": "Chez Ventrad, nous ne créons pas simplement des plateformes, nous construisons des partenariats. Notre équipe d'experts s'engage à fournir une solution qui non seulement répond à vos besoins actuels, mais qui pose également les bases de votre succès futur.\n\nPrêt à révolutionner votre présence en ligne ? Contactez-nous dès aujourd'hui pour démarrer votre projet sur mesure."
+  },
+  "demo": {
+    "title": "Découvrez Ventrad en Action",
+    "paragraph": "Regardez une démo rapide de la solution de Ventrad"
+  },
+  "features": {
+    "upperTitle": "Fonctionnalités Principales",
+    "title": "Plate-forme tout-en-un pour <br/> votre activité de vente en gros et détail"
+  },
+  "demoRequest": {
+    "upperTitle": "Commencer maintenant",
+    "title": "Demandez une démo",
+    "paragraph": "Découvrez Ventrad en action avec une démo en direct."
+  },
+  "action": {
+    "sales": "Contacter Sales",
+    "demo": "Obtenir Une Démo",
+    "join": "Rejoignez-nous",
+    "more": "En savoir plus",
+    "contact": "Contactez nous",
+    "watch_trial": "Regarder Free Trial",
+    "start": "Commencez avec nous",
+    "commance": "Commencer"
+  },
+  "functionalities": [
+    {
+      "title": "Plateforme B2B/B2C",
+      "text": "Plateforme de vente ecommerce B2B / B2C pour les marques et les distributeurs grossistes.",
+      "icon": "b2bb2c"
+    },
+    {
+      "title": "Customisation complète",
+      "text": "Un design adaptable pour une expérience unique et personnalisée en ligne.",
+      "icon": "customization"
+    },
+    {
+      "title": "Gestion multi-canal",
+      "text": "Offrez à vos revendeurs une tarification sur mesure, adaptée à leurs besoins.",
+      "icon": "multichannel"
+    },
+    {
+      "title": "Tarification dynamique",
+      "text": "Offrez à vos revendeurs une tarification dynamique adaptée à leurs besoins.",
+      "icon": "dynamicpricing"
+    },
+    {
+      "title": "Intégration facile outils",
+      "text": "Connexion facile et rapide à vos ERP, CRM et autres systèmes.",
+      "icon": "easyintegration"
+    },
+    {
+      "title": "Application mobile",
+      "text": "Offrez à vos clients la commodité de commander directement depuis leur smartphone. (sur mesure)",
+      "icon": "mobileapp"
+    },
+    {
+      "title": "Performances optimisées",
+      "text": "Plateforme optimisée pour un trafic élevé et une expérience utilisateur fluide.",
+      "icon": "optimizedperformance"
+    },
+    {
+      "title": "Support technique dédié",
+      "text": "Assistance prioritaire et personnalisée pour répondre à vos besoins en continu.",
+      "icon": "technicalsupport"
+    },
+    {
+      "title": "Automatisation",
+      "text": "Centralisez et automatisez vos flux de commandes pour gagner du temps.",
+      "icon": "automation"
+    },
+    {
+      "title": "Stocks en Temps Réel",
+      "text": "Suivez vos stocks avec précision pour éviter les ruptures ou surplus.",
+      "icon": "realtimestock"
+    },
+    {
+      "title": "Fidélité Intégrée Programmes",
+      "text": "Fidélisez vos clients avec des récompenses personnalisées.",
+      "icon": "loyaltyprogram"
+    },
+    {
+      "title": "Chat en Direct",
+      "text": "Engagez vos clients et répondez instantanément à leurs questions.",
+      "icon": "livechat"
+    }
+  ],
+  "benefits": {
+    "upperTitle": "Les bénéfices",
+    "title": "Pourquoi choisir Ventrad ?",
+    "paragraph": "Ventrad n’est pas une simple plateforme de vente. C’est un outil stratégique pour votre croissance.",
+    "whyVentrad": [
+      "Centraliser toutes vos opérations de vente sur une seule plateforme.",
+      "Adaptez facilement votre plateforme à la croissance de votre entreprise.",
+      "Bénéficiez d’un accompagnement personnalisé et d’un support technique 24/7",
+      "Créez un store en ligne qui reflète exactement votre vision et votre identité de marque.",
+      "Augmentez vos ventes et votre efficacité opérationnelle avec une solution sur mesure."
+    ]
+  },
+  "plans": {
+    "upperTitle": "Plans",
+    "title": "Des plans flexibles pour chaque grossiste et détaillant",
+    "paragraph": "Ventrad offre quatre plans de tarification adaptés<br/> aux besoins variés des entreprises",
+    "dara": [
+      {
+        "title": "Plan Basique",
+        "description": "Idéal pour les petites entreprises B2B/B2C",
+        "price": "47",
+
+        "features": [
+          {
+            "title": "Dashboard",
+            "subtitle": ""
+          },
+          {
+            "title": "Commandes",
+            "subtitle": ""
+          },
+          {
+            "title": "Produits",
+            "subtitle": ""
+          },
+          {
+            "title": "Offers",
+            "subtitle": "Limité à 2 offres "
+          },
+          {
+            "title": "Clients B2C",
+            "subtitle": ""
+          },
+          {
+            "title": "Distributeurs/revendeurs B2B",
+            "subtitle": "Limité à 5 (revendeurs) "
+          },
+          {
+            "title": "L'équipe",
+            "subtitle": "Limité à 2 (Manager Salesperson)"
+          },
+          {
+            "title": "Chat pour les vendeurs",
+            "subtitle": ""
+          },
+          {
+            "title": "Paramètres de mise en page",
+            "subtitle": ""
+          },
+          {
+            "title": "Prix caché",
+            "subtitle": ""
+          },
+          {
+            "title": "Monnaies multiples",
+            "subtitle": ""
+          },
+          {
+            "title": "Ventes par mois",
+            "subtitle": "(Illimité)"
+          },
+          {
+            "title": "Niveaux de prix pour les revendeurs/distributeurs",
+            "subtitle": "Deux / Revendeurs"
+          }
+        ],
+        "functions": []
+      },
+      {
+        "title": "Plan Croissance",
+        "description": "Idéal pour les petites et moyennes entreprises B2B/B2C",
+        "price": "77",
+        "features": [
+          {
+            "title": "Dashboard",
+            "subtitle": ""
+          },
+          {
+            "title": "Commandes",
+            "subtitle": ""
+          },
+          {
+            "title": "Produits",
+            "subtitle": ""
+          },
+          {
+            "title": "Offers",
+            "subtitle": "Limité à 5 offres "
+          },
+          {
+            "title": "Clients B2C",
+            "subtitle": ""
+          },
+          {
+            "title": "Distributeurs/revendeurs B2B",
+            "subtitle": "Limité à 10 (Revendeurs /Distributeurs) "
+          },
+          {
+            "title": "L'équipe",
+            "subtitle": "Limité à 3 ( Manager/Gestionnaire de commande/Salesperson)"
+          },
+          {
+            "title": "Chat pour les vendeurs",
+            "subtitle": ""
+          },
+          {
+            "title": "Paramètres de mise en page",
+            "subtitle": ""
+          },
+          {
+            "title": "Prix caché",
+            "subtitle": ""
+          },
+          {
+            "title": "Monnaies multiples",
+            "subtitle": ""
+          },
+          {
+            "title": "Ventes par mois",
+            "subtitle": "(Illimité)"
+          },
+          {
+            "title": "Niveaux de prix pour les revendeurs/distributeurs",
+            "subtitle": "Deux / Revendeurs, distributeurs "
+          },
+          {
+            "title": "Édition des bons de commande/facturation",
+            "subtitle": ""
+          }
+        ]
+      },
+      {
+        "title": "Plan Avancé",
+        "description": "Conçu pour grandes entreprises et marketplaces",
+        "price": "200",
+        "features": [
+          {
+            "title": "Dashboard",
+            "subtitle": ""
+          },
+          {
+            "title": "Commandes",
+            "subtitle": ""
+          },
+          {
+            "title": "Produits",
+            "subtitle": ""
+          },
+          {
+            "title": "Offers",
+            "subtitle": "Limité à 10 offres "
+          },
+          {
+            "title": "Clients B2C",
+            "subtitle": ""
+          },
+          {
+            "title": "Distributeurs/revendeurs B2B",
+            "subtitle": "Limité à 20 (revendeurs/distributeurs)"
+          },
+          {
+            "title": "L'équipe",
+            "subtitle": "Limité à 4 ( Manager/Gestionnaire de commande/Salesperson)"
+          },
+          {
+            "title": "Chat pour les vendeurs",
+            "subtitle": ""
+          },
+          {
+            "title": "Paramètres de mise en page",
+            "subtitle": ""
+          },
+          {
+            "title": "Prix caché",
+            "subtitle": ""
+          },
+          {
+            "title": "Monnaies multiples",
+            "subtitle": ""
+          },
+          {
+            "title": "Ventes par mois",
+            "subtitle": "(Illimité)"
+          },
+          {
+            "title": "Niveaux de prix pour les revendeurs/distributeurs",
+            "subtitle": "Trois / Revendeurs, distributeurs"
+          },
+          {
+            "title": "Édition des bons de commande/facturation",
+            "subtitle": ""
+          },
+          {
+            "title": "Messages entre l'équipe",
+            "subtitle": ""
+          },
+          {
+            "title": "Gestion des tâches pour Salesperso",
+            "subtitle": ""
+          },
+          {
+            "title": "Label blanc",
+            "subtitle": ""
+          }
+        ]
+      },
+      {
+        "title": "Plan Entreprise",
+        "description": "Conçu pour grandes entreprises B2B/B2C",
+        "price": "500",
+        "features": [
+          {
+            "title": "Dashboard",
+            "subtitle": ""
+          },
+          {
+            "title": "Commandes",
+            "subtitle": ""
+          },
+          {
+            "title": "Produits",
+            "subtitle": ""
+          },
+          {
+            "title": "Offers",
+            "subtitle": "(Illimité)"
+          },
+          {
+            "title": "Clients B2C",
+            "subtitle": ""
+          },
+          {
+            "title": "Distributeurs/revendeurs B2B",
+            "subtitle": "Illimité (Revendeurs / Distributeurs)"
+          },
+          {
+            "title": "L'équipe",
+            "subtitle": "Unlimited, all roles and unlimited members"
+          },
+          {
+            "title": "Chat pour les vendeurs",
+            "subtitle": ""
+          },
+          {
+            "title": "Paramètres de mise en page",
+            "subtitle": ""
+          },
+          {
+            "title": "Prix caché",
+            "subtitle": ""
+          },
+          {
+            "title": "Monnaies multiples",
+            "subtitle": ""
+          },
+          {
+            "title": "Ventes par mois",
+            "subtitle": "(Illimité)"
+          },
+          {
+            "title": "Niveaux de prix pour les revendeurs/distributeurs",
+            "subtitle": "Illimité / Revendeurs, distributeurs"
+          },
+          {
+            "title": "Édition des bons de commande/facturation",
+            "subtitle": ""
+          },
+          {
+            "title": "Messages entre l'équipe",
+            "subtitle": ""
+          },
+          {
+            "title": "Gestion des tâches pour Salesperso",
+            "subtitle": ""
+          },
+          {
+            "title": "Label blanc",
+            "subtitle": ""
+          },
+          {
+            "title": "Gestion des tâches pour  Gestionnaire de contenu",
+            "subtitle": ""
+          },
+          {
+            "title": "Gestion des points de vente (POS)",
+            "subtitle": ""
+          },
+          {
+            "title": "Scanner de codes-barres",
+            "subtitle": ""
+          }
+        ]
+      }
+    ],
+    "month": "Par Mois",
+    "recommand": "Recommandé"
+  },
+  "contactForm": {
+    "headerTitle": "Contactez Notre<br/> Équipe Commerciale",
+    "closeButton": "Fermer",
+    "description": "Remplissez le formulaire ci-dessous et un de nos experts vous contactera rapidement pour discuter de vos besoins.",
+    "fields": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "phone": "N° de téléphone",
+      "company": {
+        "label": "Nom de l'entreprise",
+        "optional": "(Optionnel)"
+      }
+    },
+    "submitButton": "Envoyer",
+    "toastMessage": "Coordonnées reçues"
+  },
+  "footer": {
+    "stayInformed": "Restez informé avec Ventrad",
+    "emailSubscribe": "Recevez conseils, mises à jour et promotions par email",
+    "sections": {
+      "pages": "Pages",
+      "contact": "Contact",
+      "socialMedia": "Réseaux sociaux"
+    },
+    "copyright": "Ventrad Private Ltd. Tous droits réservés",
+    "links": {
+      "terms": "Conditions d'utilisation",
+      "privacyPolicy": "Politique de confidentialité"
+    },
+      "readyToUse": "Prêt à utiliser"
+  }
+}

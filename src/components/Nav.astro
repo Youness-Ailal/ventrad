@@ -2,22 +2,30 @@
 import logotext from "@assets/logos/logoText.svg?url";
 import Button from "./ui/Button.astro";
 import MobileMenu from "./MobileMenu.astro";
-export const navLinks = [
-  { label: "Accueil", href: "/" },
-  { label: "Fonctionnalités", href: "/functions" },
-  { label: "À Propos de Nous", href: "/about" },
-  { label: "Tarification", href: "/pricing" },
-  { label: "Blog", href: "/blog" },
-];
+import LangPicker from "./LangPicker.astro";
+import { t } from "i18next";
+
+// export const navLinks = [
+//   { label: "Accueil", href: "/" },
+//   { label: "Fonctionnalités", href: "/functions" },
+//   { label: "À Propos de Nous", href: "/about" },
+//   { label: "Tarification", href: "/pricing" },
+//   { label: "Blog", href: "/blog" },
+// ];
+const navLinks: Array<any> = t("navlinks", {
+  returnObjects: true,
+});
 ---
 
-<header>
+<header class="">
   <div class="p-2 text-center relative bg-secondary text-white">
-    Vous avez des questions ou besoin de plus d'informations ? Nous sommes là
-    pour vous aider. <button
-      class="font-semibold contact underline hover:no-underline"
-      >Contactez nous</button
+    {t("header.message")}
+    <button class="font-semibold contact underline hover:no-underline"
+      >{t("action.contact")}</button
     >
+  </div>
+  <div class="w-[min(100%,1400px)] mt-2 -mb-3 pr-10 flex justify-end mx-auto">
+    <LangPicker />
   </div>
   <div
     class="p-4 lg:p-6 mb-2 max-w-1400 mx-auto flex items-center justify-between gap-2 sm:gap-4 text-secondary-dark">
@@ -41,17 +49,20 @@ export const navLinks = [
         }
       </ol>
     </nav>
-    <div class="flex items-center gap-4">
-      <button
-        class="font-medium hover:underline underline-offset-2 max-[1100px]:hidden go-watch-trial"
-        >Regarder Free Trial</button
-      >
-      <Button action="contact">Obtenir Une Démo</Button>
-      <button class="flex-col menu-btn gap-[6px] ml-2 hidden max-[1100px]:flex">
-        <p class="h-[3px] w-8 rounded-full bg-secondary"></p>
-        <p class="h-[3px] w-5 rounded-full bg-secondary"></p>
-        <p class="h-[3px] w-8 rounded-full bg-secondary"></p>
-      </button>
+    <div class="">
+      <div class="flex items-center gap-4">
+        <button
+          class="font-medium hover:underline underline-offset-2 max-[1100px]:hidden go-watch-trial"
+          >{t("action.watch_trial")}</button
+        >
+        <Button action="contact">{t("action.demo")}</Button>
+        <button
+          class="flex-col menu-btn gap-[6px] ml-2 hidden max-[1100px]:flex">
+          <p class="h-[3px] w-8 rounded-full bg-secondary"></p>
+          <p class="h-[3px] w-5 rounded-full bg-secondary"></p>
+          <p class="h-[3px] w-8 rounded-full bg-secondary"></p>
+        </button>
+      </div>
     </div>
   </div>
   <MobileMenu />

@@ -3,57 +3,35 @@ import Button from "../ui/Button.astro";
 import { Icon } from "astro-icon/components";
 // import logo from "@assets/logos/logolight.svg?url";
 import Container from "../ui/Container.astro";
-export const statsData = [
-  {
-    title: "+25% de CA",
-    text: "En moyenne pour les entreprises <br/> e-commerce B2B/B2C.",
-    icon: "increase",
-  },
-  {
-    title: "-50% des coûts",
-    text: "Grâce à l'automatisation des <br/> processus.",
-    icon: "coins",
-  },
-  {
-    title: "70% des acheteurs B2B",
-    text: "Préfèrent commander <br/> en ligne.",
-    icon: "sale",
-  },
-  {
-    title: "80% des entreprises",
-    text: "Constatent une meilleure <br/> satisfaction client.",
-    icon: "company",
-  },
-];
+import { t } from "i18next";
+const statsData = t("hero.stats", { returnObjects: true }) as Array<any>;
 ---
 
 <Container>
   <div
     class="bg-secondary-dark rounded-2xl lg:rounded-[30px] min-h-[400px] p-4 lg:min-h-[550px] flex items-center justify-center flex-col relative text-white text-center gap-3 lg:gap-5 home-hero">
     <p class="tracking-widest font-light text-sm sm:text-base show-opacity">
-      La solution complète pour gérer les commandes et développer les ventes
+      {t("hero.upperTitle")}
     </p>
     <h1
       class="text-3xl sm:text-4xl md:text-5xl lg:text-[66px] font-bold flex flex-col hero-title-container">
       <span class="overflow-y-hidden">
-        <p class="title-hero">Boostez votre commerce</p>
+        <p class="title-hero">{t("hero.title.1")}</p>
       </span>
       <span class="overflow-y-hidden py-2">
-        <p class="title-hero">de gros avec Ventrad</p>
+        <p class="title-hero">{t("hero.title.2")}</p>
       </span>
     </h1>
     <p
       class="tracking-wider text-sm font-light max-w-[85ch] mt-2 lg:mt-4 leading-6 show-opacity">
-      Gérez sans effort vos stocks, vos commandes et vos clients sur le web et
-      sur mobile. Augmentez vos ventes et développez votre activité avec la
-      solution e-commerce tout-en-un de Ventrad.
+      {t("hero.description")}
     </p>
     <div
       class="flex items-center gap-3 mt-5 lg:mt-8 flex-wrap justify-center show-opacity">
       <Button variant="outline" action="contact" color="white"
-        >Contacter Sales</Button
+        >{t("action.sales")}</Button
       >
-      <Button action="contact">Obtenir Une Démo</Button>
+      <Button action="contact">{t("action.demo")}</Button>
     </div>
   </div>
   <div

@@ -1,30 +1,28 @@
 ---
-import { plansData } from "@/utils/constants";
 import Container from "../ui/Container.astro";
 import Paragraph from "../ui/Paragraph.astro";
 import Title from "../ui/Title.astro";
 import UpperTitle from "../ui/UpperTitle.astro";
-import { cn } from "@/utils/cn";
-import { Icon } from "astro-icon/components";
-import Button from "../ui/Button.astro";
 import PricingV1Label from "../ui/PricingV1Label.astro";
 import PricingV1TableDesktop from "../ui/PricingV1TableDesktop.astro";
 import PricingV1TableMobile from "../ui/PricingV1TableMobile.astro";
+import { t } from "i18next";
+import { Trans } from "astro-i18next/components";
 ---
 
 <Container>
-  <div  class="flex flex-col text-center gap-2 p-1 sm:p-2 max-w-1400 mx-auto">
+  <div class="flex flex-col text-center gap-2 p-1 sm:p-2 max-w-1400 mx-auto">
     <UpperTitle>Plans</UpperTitle>
-    <Title>Des plans flexibles pour chaque grossiste et détaillant</Title>
-    <Paragraph
-      >Ventrad offre quatre plans de tarification adaptés<br /> aux besoins variés
-      des entreprises</Paragraph
-    >
-  
+    <Title>{t("plans.title")}</Title>
+    <Paragraph>
+      <Trans i18nKey="plans.paragraph">
+        {t("plans.paragraph")}
+      </Trans>
+    </Paragraph>
 
-    <div  class="hidden lg:block overflow-x-hidden">
+    <div class="hidden lg:block">
       <PricingV1TableDesktop />
-    </divs>
+    </div>
     <div class="block lg:hidden">
       <PricingV1Label />
       <PricingV1TableMobile />

@@ -1,8 +1,11 @@
 ---
-import { questions } from "@/utils/constants";
+import { questionsFr, questionsEn } from "@/utils/constants";
 import Container from "../ui/Container.astro";
 import Title from "../ui/Title.astro";
 import { Icon } from "astro-icon/components";
+import i18n from "i18next";
+const lng = i18n.language;
+const questions = lng === "en" ? questionsEn : questionsFr;
 ---
 
 <Container>
@@ -24,7 +27,8 @@ import { Icon } from "astro-icon/components";
           </summary>
           <p
             set:html={item.answer}
-            class="p-3  lg:p-6 pt-2 pl-0 ml-4 max-w-[100ch] text-lg border-t border-secondary-darker/20"></p>
+            class="p-3  lg:p-6 pt-2 pl-0 ml-4 max-w-[100ch] text-lg border-t border-secondary-darker/20"
+          />
         </details>
       ))
     }

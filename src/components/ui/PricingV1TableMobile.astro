@@ -3,7 +3,8 @@ import { cn } from "@/utils/cn";
 import Button from "./Button.astro";
 import { Icon } from "astro-icon/components";
 import Paragraph from "./Paragraph.astro";
-import { plansData } from "@/utils/constants";
+import { t } from "i18next";
+const plansData: Array<any> = t("plans.data", { returnObjects: true });
 ---
 
 <div class="mt-8 lg:mt-14 lg:gap-9">
@@ -25,7 +26,7 @@ import { plansData } from "@/utils/constants";
                 "block opacity-100": isPremium,
               }
             )}>
-            Recommandé
+            {t("plans.recommand")}
           </p>
           <div class="flex flex-col gap-2 px-4 lg:px-6 ">
             <p
@@ -41,7 +42,7 @@ import { plansData } from "@/utils/constants";
             <div class="my-2 lg:my-4 flex justify-center items-end gap-[2px] p-1">
               <p class={cn("text-3xl  lg:text-5xl font-bold")}>{price}</p>
               <p class="font-extrabold text-2xl lg:text-3xl">$</p>
-              <p class="text-[#B3B3B3] text-base">/ Par Mois</p>
+              <p class="text-[#B3B3B3] text-base">/ {t("plans.month")}</p>
             </div>
           </div>
           <p class="w-full h-[1px] my-4 bg-border" />
@@ -80,7 +81,7 @@ import { plansData } from "@/utils/constants";
               action="contact"
               color={isPremium ? "primary" : "secondary"}
               className="!mt-auto">
-              Contacter Sales
+              {t("actions.sales")}
             </Button>
           </div>
         </div>

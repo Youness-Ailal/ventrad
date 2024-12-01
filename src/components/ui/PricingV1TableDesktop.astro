@@ -3,15 +3,15 @@ import { cn } from "@/utils/cn";
 import Button from "./Button.astro";
 import { Icon } from "astro-icon/components";
 import Paragraph from "./Paragraph.astro";
-import { plansData } from "@/utils/constants";
-import SubTitle from "./SubTitle.astro";
+import { t } from "i18next";
+const plansData: Array<any> = t("plans.data", { returnObjects: true });
 ---
 
 <div class="grid grid-cols-4 gap-4 mt-8 lg:mt-14 lg:gap-9">
   {
     plansData.map(plan => {
       const { title, description, price, features } = plan;
-      const isPremium = title === "Plan Avancé";
+      const isPremium = title === "Plan Avancé" || title === "Advanced Plan";
       return (
         <div
           class={cn(
@@ -25,7 +25,7 @@ import SubTitle from "./SubTitle.astro";
                 "block opacity-100": isPremium,
               }
             )}>
-            Recommandé
+            {t("plans.recommand")}
           </p>
           <div class="flex flex-col gap-2 px-4 lg:px-6 ">
             <p
@@ -41,7 +41,7 @@ import SubTitle from "./SubTitle.astro";
             <div class="my-2 lg:my-4 flex justify-center items-end gap-[2px] p-1">
               <p class={cn("text-3xl  lg:text-5xl font-bold")}>{price}</p>
               <p class="font-extrabold text-2xl lg:text-3xl">$</p>
-              <p class="text-[#B3B3B3] text-base">/ Par Mois</p>
+              <p class="text-[#B3B3B3] text-base">/ {t("plans.month")}</p>
             </div>
           </div>
           <p class="w-full h-[1px] my-4 bg-border" />
@@ -67,7 +67,9 @@ import SubTitle from "./SubTitle.astro";
                     {item.title}
 
                     {item.subtitle && (
-                      <abbr title={item.subtitle} class="flex items-center justify-center rounded-full text-white h-4 text-xs cursor-pointer aspect-square bg-[#8D8D8D]">
+                      <abbr
+                        title={item.subtitle}
+                        class="flex items-center justify-center rounded-full text-white h-4 text-xs cursor-pointer aspect-square bg-[#8D8D8D]">
                         !
                       </abbr>
                     )}
@@ -86,7 +88,7 @@ import SubTitle from "./SubTitle.astro";
               action="contact"
               color={isPremium ? "primary" : "secondary"}
               className="!mt-auto">
-              Contacter Sales
+              {t("action.sales")}
             </Button>
           </div>
         </div>

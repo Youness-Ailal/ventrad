@@ -3,10 +3,13 @@ import Container from "./ui/Container.astro";
 import logo from "@assets/logos/logoText.svg?url";
 import Paragraph from "./ui/Paragraph.astro";
 import EmailForm from "./EmailForm.astro";
-import { navLinks } from "./Nav.astro";
 import { contactDetails, footerLinks } from "@/utils/constants";
 import { Icon } from "astro-icon/components";
 import Ready from "./ui/Ready.astro";
+import { t } from "i18next";
+const navLinks: Array<any> = t("navlinks", {
+  returnObjects: true,
+});
 ---
 
 <footer class="mt-8 lg:mt-20 bg-white">
@@ -19,17 +22,15 @@ import Ready from "./ui/Ready.astro";
       <div class="flex flex-wrap justify-between gap-10 lg:gap-28">
         <div class="max-w-[300px] flex flex-col">
           <p class="text-3xl text-secondary font-bold mb-2">
-            Restez informé avec Ventrad
+            {t("footer.stayInformed")}
           </p>
-          <Paragraph
-            >Recevez conseils, mises à jour et promotions par email</Paragraph
-          >
+          <Paragraph> {t("footer.emailSubscribe")}</Paragraph>
           <div class="self-start">
             <EmailForm />
           </div>
         </div>
         <div class="flex flex-col gap-4">
-          <p class="font-semibold text-lg">Pages</p>
+          <p class="font-semibold text-lg">{t("footer.sections.pages")}</p>
           <ul class="space-y-1">
             {
               navLinks.map(item => (
@@ -45,7 +46,7 @@ import Ready from "./ui/Ready.astro";
           </ul>
         </div>
         <div class="flex flex-col gap-4">
-          <p class="font-semibold text-lg">Contact</p>
+          <p class="font-semibold text-lg">{t("footer.sections.contact")}</p>
           <ul class="space-y-2">
             <li>
               <a
@@ -77,7 +78,9 @@ import Ready from "./ui/Ready.astro";
           </ul>
         </div>
         <div class="flex flex-col gap-4">
-          <p class="font-semibold text-lg">Réseaux sociaux</p>
+          <p class="font-semibold text-lg">
+            {t("footer.sections.socialMedia")}
+          </p>
           <ul class="flex gap-4">
             <li>
               <a
@@ -133,16 +136,17 @@ import Ready from "./ui/Ready.astro";
       <div
         class="py-4 pt-8 border-t border-black/20 flex flex-wrap gap-4 justify-between">
         <p class="text-black/40">
-          @{new Date().getFullYear()} Ventrad Private Ltd. Tous droits réservés
+          @{new Date().getFullYear()}
+          {t("footer.copyright")}
         </p>
         <div class="flex items-center gap-2">
           <a
             class="text-black/40 hover:text-black/60"
-            href={footerLinks.condition}>Conditions d'utilisation</a
+            href={footerLinks.condition}>{t("footer.links.terms")}</a
           >
           <a
             class="text-black/40 hover:text-black/60"
-            href={footerLinks.condition}>Politique de confidentialité</a
+            href={footerLinks.condition}>{t("footer.links.privacyPolicy")}</a
           >
         </div>
       </div>

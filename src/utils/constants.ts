@@ -257,8 +257,7 @@ export const plansData = [
       },
       {
         title: "Messages entre l'équipe",
-        subtitle:
-          "",
+        subtitle: "",
       },
       {
         title: "Gestion des tâches pour Salesperso",
@@ -364,7 +363,7 @@ interface faqItem {
   answer: string;
 }
 
-export const questions = [
+export const questionsFr = [
   {
     question: "Qu'est-ce que Ventrad ?",
     answer:
@@ -409,6 +408,53 @@ export const questions = [
     question: "Offrez-vous un support après-vente ?",
     answer:
       "Oui, nous proposons un service après-vente complet incluant maintenance, mises à jour, et assistance technique pour garantir le bon fonctionnement de votre plateforme.",
+  },
+];
+export const questionsEn = [
+  {
+    question: "What is Ventrad?",
+    answer:
+      "Ventrad is an e-commerce platform designed for businesses operating in B2B, B2C, or both. It provides powerful tools to digitize and manage the entire sales process, including product management, integrated CRM, advanced reporting, and more.",
+  },
+  {
+    question: "What types of businesses can use Ventrad?",
+    answer:
+      "Ventrad is ideal for manufacturers, wholesalers, and retailers looking to optimize their online sales operations, whether for wholesale or retail.",
+  },
+  {
+    question: "Does Ventrad offer customization options?",
+    answer:
+      "Yes, Ventrad provides tailor-made solutions with the ability to customize features according to your business's specific needs.",
+  },
+  {
+    question: "What are the benefits of Ventrad for B2B?",
+    answer:
+      "● Simplified bulk order management<br/>● Access to personalized pricing for each client<br/>● Advanced CRM features to strengthen customer relationships",
+  },
+  {
+    question: "And for B2C?",
+    answer:
+      "● A smooth user experience for your end customers<br/>● Integrated loyalty system to improve retention<br/>● Secure online payments",
+  },
+  {
+    question: "Can Ventrad integrate with other software?",
+    answer:
+      "Absolutely! Ventrad can integrate with your existing software, such as ERP, external CRM, or payment platforms.",
+  },
+  {
+    question: "Do you offer a mobile app?",
+    answer:
+      "Yes, Ventrad includes a mobile app that allows your customers to place orders easily, directly from their smartphones.",
+  },
+  {
+    question: "How can I start using Ventrad?",
+    answer:
+      "Simply contact us to discuss your needs. We will guide you through every step, from installation to customizing your platform.",
+  },
+  {
+    question: "Do you offer after-sales support?",
+    answer:
+      "Yes, we provide comprehensive after-sales service, including maintenance, updates, and technical support to ensure your platform runs smoothly.",
   },
 ];
 
