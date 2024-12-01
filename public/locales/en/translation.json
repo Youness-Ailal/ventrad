@@ -289,7 +289,14 @@
       }
     ],
     "month": "Per Month",
-    "recommand": "Recommanded"
+    "recommand": "Recommanded",
+    "isPremium": true
+  },
+  "pricing": {
+    "basic": "Basic",
+    "growth": "Growth",
+    "advanced": "Advanced",
+    "enterprise": "Enterprise"
   },
   "contactForm": {
     "headerTitle": "Contact Our<br/> Sales Team",

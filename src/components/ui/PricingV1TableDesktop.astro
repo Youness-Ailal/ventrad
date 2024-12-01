@@ -11,7 +11,7 @@ const plansData: Array<any> = t("plans.data", { returnObjects: true });
   {
     plansData.map(plan => {
       const { title, description, price, features } = plan;
-      const isPremium = title === "Plan Avancé" || title === "Advanced Plan";
+      const isPremium = price === "200";
       return (
         <div
           class={cn(

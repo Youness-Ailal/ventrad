@@ -11,12 +11,12 @@ const plansData: Array<any> = t("plans.data", { returnObjects: true });
   {
     plansData.map(plan => {
       const { title, description, price, features } = plan;
-      const isPremium = title === "Plan Avancé";
+      const isPremium = price === "200";
       return (
         <div
           data-id={title}
           class={cn(
-            `border-2 relative rounded-lg py-6 lg:py-10 pt-8 lg:pt-12 lg:rounded-2xl text-secondary-dark-hover border-border  flex-col gap-4 flex ${title} plan-item`,
+            `border-2 relative rounded-lg py-6 lg:py-10 pt-8 lg:pt-12 lg:rounded-2xl text-secondary-dark-hover border-border  flex-col gap-4 flex plan-${price} plan-item`,
             { "border-primary text-primary selected": isPremium }
           )}>
           <p

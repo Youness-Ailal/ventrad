@@ -1,39 +1,39 @@
 ---
-
+import { t } from "i18next";
 ---
 
 <form
   class="grid mt-10 gap-3 grid-cols-4 max-[450px]:grid-cols-2 w-full mx-auto p-2 py-4 sm:p-4 rounded-lg border border-secondary/50">
   <div class="w-full flex">
-    <input checked class="hidden peer" type="radio" name="price" id="basique" />
+    <input checked class="hidden peer" type="radio" name="price" id="plan-47" />
     <label
       class="p-2 sm:p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-lg border peer-checked:border-secondary/50"
-      for="basique">
-      Basique
+      for="plan-47">
+      {t("pricing.basic")}
     </label>
   </div>
   <div class="w-full flex">
-    <input class="hidden peer" type="radio" name="price" id="croissance" />
+    <input class="hidden peer" type="radio" name="price" id="plan-77" />
     <label
       class="p-2 sm:p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-lg border peer-checked:border-secondary/50"
-      for="croissance">
-      Croissance
+      for="plan-77">
+      {t("pricing.growth")}
     </label>
   </div>
   <div class="w-full flex">
-    <input class="hidden peer" type="radio" name="price" id="avance" checked />
+    <input class="hidden peer" type="radio" name="price" id="plan-200" checked />
     <label
       class="p-2 sm:p-[10px] border-primary-dark/30 w-full cursor-pointer transition font-medium text-primary peer-checked:font-bold peer-checked:text-primary peer-checked:bg-primary/10 rounded-lg border peer-checked:border-primary/50"
-      for="avance">
-      Avancé
+      for="plan-200">
+      {t("pricing.advanced")}
     </label>
   </div>
   <div class="w-full flex">
-    <input class="hidden peer" type="radio" name="price" id="Entreprise" />
+    <input class="hidden peer" type="radio" name="price" id="plan-500" />
     <label
       class="p-2 sm:p-[10px] border-secondary/15 w-full cursor-pointer transition font-medium text-secondary peer-checked:font-bold peer-checked:text-secondary-dark-hover peer-checked:bg-secondary/15 rounded-lg border peer-checked:border-secondary/50"
-      for="Entreprise">
-      Entreprise
+      for="plan-500">
+      {t("pricing.enterprise")}
     </label>
   </div>
 </form>
@@ -41,10 +41,10 @@
 <script>
   type planType = "basic" | "avance" | "scale" | "entreprise";
   const plans: Record<planType, HTMLElement> = {
-    basic: document.querySelector(".Plan.Basique"),
-    avance: document.querySelector(".Plan.Avancé"),
-    scale: document.querySelector(".Plan.Croissance"),
-    entreprise: document.querySelector(".Plan.Entreprise"),
+    basic: document.querySelector(".plan-47"),
+    avance: document.querySelector(".plan-200"),
+    scale: document.querySelector(".plan-77"),
+    entreprise: document.querySelector(".plan-500"),
   };
 
   const showPlan = (selectedPlan: planType) => {
@@ -65,16 +65,16 @@
       const target = event.target as HTMLInputElement;
       if (target.name === "price" && target.checked) {
         switch (target.id) {
-          case "basique":
+          case "plan-47":
             showPlan("basic");
             break;
-          case "croissance":
+          case "plan-77":
             showPlan("scale");
             break;
-          case "avance":
+          case "plan-200":
             showPlan("avance");
             break;
-          case "Entreprise":
+          case "plan-500":
             showPlan("entreprise");
             break;
           default:

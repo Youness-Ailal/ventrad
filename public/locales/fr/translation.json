@@ -160,6 +160,7 @@
         "title": "Plan Basique",
         "description": "Idéal pour les petites entreprises B2B/B2C",
         "price": "47",
+        
 
         "features": [
           {
@@ -445,6 +446,7 @@
     ],
     "month": "Par Mois",
     "recommand": "Recommandé"
+    
   },
   "contactForm": {
     "headerTitle": "Contactez Notre<br/> Équipe Commerciale",
@@ -463,6 +465,12 @@
     "submitButton": "Envoyer",
     "toastMessage": "Coordonnées reçues"
   },
+  "pricing": {
+    "basic": "Basique",
+    "growth": "Croissance",
+    "advanced": "Avancé",
+    "enterprise": "Entreprise"
+  },
   "footer": {
     "stayInformed": "Restez informé avec Ventrad",
     "emailSubscribe": "Recevez conseils, mises à jour et promotions par email",
@@ -476,6 +484,6 @@
       "terms": "Conditions d'utilisation",
       "privacyPolicy": "Politique de confidentialité"
     },
-      "readyToUse": "Prêt à utiliser"
+    "readyToUse": "Prêt à utiliser"
   }
 }
