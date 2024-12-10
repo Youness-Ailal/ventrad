@@ -4,13 +4,14 @@ import Container from "../ui/Container.astro";
 import Paragraph from "../ui/Paragraph.astro";
 import Title from "../ui/Title.astro";
 import { t } from "i18next";
+import trial from "@assets/trial.webp?url";
 ---
 
 <Container>
   <div class="flex flex-col text-center gap-2 lg:gap-3 p-2 video-section">
     <Title>{t("demo.title")}</Title>
     <Paragraph>{t("demo.paragraph")}</Paragraph>
-    <div class="my-10 lg:my-16">
+    <!-- <div class="my-10 lg:my-16">
       <div
         class="wistia_responsive_padding"
         style="padding:56.25% 0 0 0;position:relative;">
@@ -34,6 +35,9 @@ import { t } from "i18next";
           </div>
         </div>
       </div>
+    </div> -->
+    <div class="lg:h-[800px] sm:h-[500px] h-[300px]  w-full">
+      <img src={trial} class="object-contain h-full w-full" alt="Ventrad trial">
     </div>
     <Button action="contact" className="self-center">{t("action.demo")}</Button>
   </div>

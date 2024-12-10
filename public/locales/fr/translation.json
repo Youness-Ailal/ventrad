@@ -1,22 +1,22 @@
 {
   "home": {
     "title": "Ventrad | Solution de gestion des commandes et ventes",
-    "description": "Gérez sans effort vos stocks, vos commandes et vos clients sur le web et sur mobile. Augmentez vos ventes et développez votre activité avec la solution e-commerce tout-en-un de Ventrad."
+    "description": "Gérez sans effort vos stocks, vos commandes et vos clients sur le web. Augmentez vos ventes et développez votre activité avec la solution e-commerce tout-en-un de Ventrad."
   },
   "header": {
     "message": "Vous avez des questions ou besoin de plus d'informations ? Nous sommes là pour vous aider."
   },
   "navlinks": [
-    { "label": "Accueil", "href": "/" },
-    { "label": "Fonctionnalités", "href": "/functions" },
-    { "label": "À Propos de Nous", "href": "/about" },
-    { "label": "Tarification", "href": "/pricing" },
-    { "label": "Blog", "href": "/blog" }
+    { "label": "Accueil", "href": "/fr" },
+    { "label": "Fonctionnalités", "href": "/fr/functions" },
+    { "label": "À Propos de Nous", "href": "/fr/about" },
+    { "label": "Tarification", "href": "/fr/pricing" },
+    { "label": "Blog", "href": "/fr/blog" }
   ],
   "hero": {
     "upperTitle": "La solution complète pour gérer les commandes et développer les ventes",
-    "title": { "1": "Boostez votre commerce", "2": "de gros avec Ventrad" },
-    "description": "Gérez sans effort vos stocks, vos commandes et vos clients sur le web et sur mobile. Augmentez vos ventes et développez votre activité avec la solution e-commerce tout-en-un de Ventrad.",
+    "title": { "1": "Boostez votre commerce", "2": "B2B/B2C avec Ventrad" },
+    "description": "Gérez sans effort vos stocks, vos commandes et vos clients sur le web. Augmentez vos ventes et développez votre activité avec la solution e-commerce tout-en-un de Ventrad.",
     "stats": [
       {
         "title": "+25% de CA",
@@ -160,7 +160,6 @@
         "title": "Plan Basique",
         "description": "Idéal pour les petites entreprises B2B/B2C",
         "price": "47",
-        
 
         "features": [
           {
@@ -446,7 +445,6 @@
     ],
     "month": "Par Mois",
     "recommand": "Recommandé"
-    
   },
   "contactForm": {
     "headerTitle": "Contactez Notre<br/> Équipe Commerciale",

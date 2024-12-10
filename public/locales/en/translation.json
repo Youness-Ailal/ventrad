@@ -1,17 +1,17 @@
 {
   "home": {
     "title": "Ventrad | Order and Sales Management Solution",
-    "description": "Effortlessly manage your inventory, orders, and clients on the web and mobile. Increase your sales and grow your business with Ventrad's all-in-one e-commerce solution."
+    "description": "Effortlessly manage your inventory, orders, and clients on the web. Increase your sales and grow your business with Ventrad's all-in-one e-commerce solution."
   },
   "header": {
     "message": "Do you have questions or need more information? We are here to help."
   },
   "navlinks": [
-    { "label": "Home", "href": "/en" },
-    { "label": "Features", "href": "/en/functions" },
-    { "label": "About Us", "href": "/en/about" },
-    { "label": "Pricing", "href": "/en/pricing" },
-    { "label": "Blog", "href": "/en/blog" }
+    { "label": "Home", "href": "/" },
+    { "label": "Features", "href": "/functions" },
+    { "label": "About Us", "href": "/about" },
+    { "label": "Pricing", "href": "/pricing" },
+    { "label": "Blog", "href": "/blog" }
   ],
   "choose": {
     "title": "Choose Ventrad to Accelerate Your Growth!",
@@ -26,7 +26,7 @@
   "hero": {
     "upperTitle": "The complete solution to manage orders and grow sales",
     "title": { "1": "Boost Your Wholesale", "2": "Business with Ventrad" },
-    "description": "Effortlessly manage your inventory, orders, and clients on the web and mobile. Increase your sales and grow your business with Ventrad's all-in-one e-commerce solution.",
+    "description": "Effortlessly manage your inventory, orders, and clients on the web. Increase your sales and grow your business with Ventrad's all-in-one e-commerce solution.",
     "stats": [
       {
         "title": "+25% Revenue",
