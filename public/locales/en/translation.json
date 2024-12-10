@@ -25,8 +25,11 @@
 
   "hero": {
     "upperTitle": "The complete solution to manage orders and grow sales",
-    "title": { "1": "Boost Your Business", "2": "B2B/B2C with Ventrad" },
-    "description": "Effortlessly manage your inventory, orders, and clients on the web. Increase your sales and grow your business with Ventrad's all-in-one e-commerce solution.",
+    "title": {
+      "1": "Custom Wholesale Experiences",
+      "2": "B2B That Drives Growth"
+    },
+    "description": "Ventrad provides everything you need to create personalized B2B and B2C experiences, from custom catalogs and dynamic pricing to flexible payment terms and seamless integration. Our platform streamlines wholesale processes, helping you scale and deliver exceptional value efficiently.",
     "stats": [
       {
         "title": "+25% Revenue",
