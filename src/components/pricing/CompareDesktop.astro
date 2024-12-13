@@ -1,0 +1,164 @@
+---
+import Button from "../ui/Button.astro";
+import { cn } from "@/utils/cn";
+import Correct from "../ui/Correct.astro";
+import Notcorrect from "../ui/Notcorrect.astro";
+import { t } from "i18next";
+
+const plansData: Array<any> = t("plans.data", { returnObjects: true });
+const gridCss = "grid grid-cols-5";
+---
+
+<div class="flex flex-col mt-8">
+  <div class={cn(gridCss, "sticky top-0 z-40 bg-white")}>
+    <p
+      class="p-5 border-r-0 border text-xl font-semibold text-secondary-darker flex items-center rounded-tl-xl">
+      Feature
+    </p>
+    {
+      plansData.map((item, i) => {
+        const isPremium = item.price === "200";
+
+        return (
+          <div
+            class={cn(
+              "p-5 pb-7 flex items-center justify-center  flex-col gap-4 border",
+              {
+                "border-r-0": i !== 3,
+                "rounded-tr-xl": i === 3,
+              }
+            )}>
+            <p class="text-xl text-secondary-darker font-semibold">
+              {item.title}
+            </p>
+            <div class="w-full ">
+              <Button
+                action="contact"
+                color={isPremium ? "primary" : "secondary"}
+                className="!mt-auto w-full">
+                {t("action.sales")}
+              </Button>
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+  <div class={cn(gridCss)}>
+    <p
+      class="p-2 pl-5 min-h-[90px] border-r-0 border border-t-0 text-lg text-secondary-darker flex items-center">
+      {t("pricing.compare.price")}
+    </p>
+    {
+      plansData.map((item, i) => {
+        return (
+          <div
+            class={cn(
+              "p-2 min-h-[90px] flex items-center justify-center  border-t-0 gap-[2px] border",
+              {
+                "border-r-0": i !== 3,
+              }
+            )}>
+            <p class={"text-lg  font-medium"}>{item.price}</p>
+            <p class="font-medium text-lg">$</p>
+            <p class="text-gray-700 text-base">/ {t("plans.month")}</p>
+          </div>
+        );
+      })
+    }
+  </div>
+  <div class={cn(gridCss)}>
+    <p
+      class="p-2 pl-5 min-h-[90px] border-r-0 border border-t-0 text-lg text-secondary-darker flex items-center">
+      {t("pricing.type")}
+    </p>
+    {
+      plansData.map((item, i) => {
+        return (
+          <div
+            class={cn(
+              "p-2 min-h-[90px] text-center text-base flex items-center justify-center  border-t-0 gap-[2px] border",
+              {
+                "border-r-0": i !== 3,
+              }
+            )}>
+            <p class={""}>{item.description}</p>
+          </div>
+        );
+      })
+    }
+  </div>
+
+  {
+    plansData.at(-1).features.map((item, i) => {
+      const basic = plansData[0];
+      const growth = plansData[1];
+      const advanced = plansData[2];
+      const enterprise = plansData[3];
+
+      const isInBasic = basic.features[i]?.title === item.title;
+      const isInGrowth = growth.features[i]?.title === item.title;
+      const isInAdanced = advanced.features[i]?.title === item.title;
+
+      return (
+        <div class={cn(gridCss, "text-lg")}>
+          <p class="p-2 pl-5 min-h-[90px] border-r-0 border border-t-0 text-lg text-secondary-darker flex items-center">
+            {item.title}
+          </p>
+          <div
+            class={cn(
+              "border border-b-0 flex items-center justify-center p-1 flex-col gap-1",
+              {
+                "border-t-0": i === 0,
+                "border-b": i === plansData.at(-1).features.length - 1,
+              }
+            )}>
+            {isInBasic ? <Correct /> : <Notcorrect />}{" "}
+            <p class="text-sm text-gray-700 text-center">
+              {basic.features[i]?.subtitle}
+            </p>
+          </div>
+          <div
+            class={cn(
+              "border border-b-0 flex items-center justify-center p-1 flex-col gap-1",
+              {
+                "border-t-0": i === 0,
+                "border-b": i === plansData.at(-1).features.length - 1,
+              }
+            )}>
+            {isInGrowth ? <Correct /> : <Notcorrect />}{" "}
+            <p class="text-sm text-gray-700 text-center">
+              {growth.features[i]?.subtitle}
+            </p>
+          </div>
+          <div
+            class={cn(
+              "border border-b-0 flex items-center justify-center p-1 flex-col gap-1",
+              {
+                "border-t-0": i === 0,
+                "border-b": i === plansData.at(-1).features.length - 1,
+              }
+            )}>
+            {isInAdanced ? <Correct /> : <Notcorrect />}{" "}
+            <p class="text-sm text-gray-700 text-center">
+              {advanced.features[i]?.subtitle}
+            </p>
+          </div>
+          <div
+            class={cn(
+              "border border-b-0 flex items-center justify-center p-1 flex-col gap-1",
+              {
+                "border-t-0": i === 0,
+                "border-b": i === plansData.at(-1).features.length - 1,
+              }
+            )}>
+            <Correct />
+            <p class="text-sm text-gray-700 text-center">
+              {enterprise.features[i]?.subtitle}
+            </p>
+          </div>
+        </div>
+      );
+    })
+  }
+</div>

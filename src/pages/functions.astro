@@ -1,11 +1,17 @@
 ---
 import { changeLanguage } from "i18next";
-import Soon from "@/components/Soon.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
+import Hero from "@/components/functionalities/Hero.astro";
+import FeaturesList from "@/components/functionalities/FeaturesList.astro";
+import ChooseUs from "@/components/home/ChooseUs.astro";
+import Faq from "@/components/home/Faq.astro";
 
 changeLanguage("en");
 ---
 
 <MainLayout>
-  <Soon />
+  <Hero />
+  <FeaturesList />
+  <ChooseUs />
+  <Faq />
 </MainLayout>

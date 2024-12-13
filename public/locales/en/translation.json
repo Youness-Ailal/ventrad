@@ -64,7 +64,14 @@
   },
   "features": {
     "upperTitle": "Key Features",
-    "title": "All-in-one platform for <br/> your wholesale and retail business"
+    "title": "All-in-one platform for <br/> your wholesale and retail business",
+    "functions": {
+      "title": "Features",
+      "subtitle": "The Superpowers of<br/> Ventrad",
+      "description": "Discover how Ventrad transforms your wholesale management with advanced features.",
+      "performance": "Optimize Your Performance with Ventrad",
+      "details": "Every feature of Ventrad is designed to maximize your efficiency, from the first click to the final delivery."
+    }
   },
   "demoRequest": {
     "upperTitle": "Start Now",
@@ -141,6 +148,68 @@
     {
       "title": "Live Chat",
       "text": "Engage your customers and respond instantly to their questions.",
+      "icon": "livechat"
+    }
+  ],
+  "functionalitiesv2": [
+    {
+      "title": "B2B/B2C Platform",
+      "text": "An eCommerce sales platform designed for B2B/B2C brands and wholesale distributors. Simplify transactions, boost sales, and expand into new markets.",
+      "icon": "b2bb2c"
+    },
+    {
+      "title": "Complete Customization",
+      "text": "An adaptable design that provides a unique and personalized online experience for your customers, perfectly reflecting your brand identity.",
+      "icon": "customization"
+    },
+    {
+      "title": "Multi-channel Management",
+      "text": "Manage your resellers effectively with tailored pricing strategies, ensuring their specific needs are met effortlessly.",
+      "icon": "multichannel"
+    },
+    {
+      "title": "Dynamic Pricing",
+      "text": "Provide your resellers with dynamic pricing adapted to their requirements, improving flexibility and competitiveness.",
+      "icon": "dynamicpricing"
+    },
+    {
+      "title": "Easy Tool Integration",
+      "text": "Quick and seamless connection to your ERP, CRM, and other critical systems for smooth operations.",
+      "icon": "easyintegration"
+    },
+    {
+      "title": "Mobile Application",
+      "text": "Offer your customers the convenience of ordering directly from their smartphones with a fully customizable mobile app.",
+      "icon": "mobileapp"
+    },
+    {
+      "title": "Optimized Performance",
+      "text": "An optimized platform that supports high traffic and ensures a smooth, reliable user experience.",
+      "icon": "optimizedperformance"
+    },
+    {
+      "title": "Dedicated Technical Support",
+      "text": "Receive priority and personalized technical assistance to address your ongoing needs efficiently.",
+      "icon": "technicalsupport"
+    },
+    {
+      "title": "Automation",
+      "text": "Centralize and automate your order processes to save time, reduce errors, and increase efficiency.",
+      "icon": "automation"
+    },
+    {
+      "title": "Real-time Stock",
+      "text": "Track your inventory accurately in real time to prevent shortages or overstock, ensuring optimal stock levels.",
+      "icon": "realtimestock"
+    },
+    {
+      "title": "Integrated Loyalty Programs",
+      "text": "Build long-term customer loyalty with integrated, customizable rewards programs.",
+      "icon": "loyaltyprogram"
+    },
+    {
+      "title": "Live Chat",
+      "text": "Engage with your customers instantly and respond to their queries in real time, improving satisfaction and retention.",
       "icon": "livechat"
     }
   ],
@@ -299,7 +368,14 @@
     "basic": "Basic",
     "growth": "Growth",
     "advanced": "Advanced",
-    "enterprise": "Enterprise"
+    "enterprise": "Enterprise",
+    "title": { "1": "Great List", "2": "Pricing for All<br/> Your Needs" },
+    "compare": {
+      "1": "Compare Plans",
+      "2": "Compare our plans to find the perfect<br/> solution for your business",
+      "price": "Price"
+    },
+    "type": "Business Type"
   },
   "contactForm": {
     "headerTitle": "Contact Our<br/> Sales Team",
@@ -332,5 +408,60 @@
       "privacyPolicy": "Privacy Policy"
     },
     "readyToUse": "Ready to use"
+  },
+  "about": {
+    "title": "Our Journey, Values, and Mission",
+    "we": "We Are Ventrad",
+    "journey": {
+      "title": "Our Journey",
+      "text": "Since 2018, Ventrad has been committed to transforming online commerce by offering innovative and tailor-made technological solutions. Starting with a creative vision, we developed a platform that adapts to the needs of B2B and B2C businesses.<br /><br />Today, we are proud to contribute to the growth of our clients by providing them with powerful and customized tools."
+    }
+  },
+  "values": {
+    "title": "What Guides Us Daily",
+    "subtitle": "Our Core Values",
+    "data": [
+      {
+        "title": "Creativity",
+        "text": "Innovative and unique solutions for every project."
+      },
+      {
+        "title": "Impact",
+        "text": "Actions for measurable and significant results."
+      },
+      {
+        "title": "Excellence",
+        "text": "Superior quality at every stage."
+      },
+      {
+        "title": "Adaptability",
+        "text": "Scalable and flexible solutions."
+      },
+      {
+        "title": "Collaboration",
+        "text": "Co-creation and strong partnerships."
+      },
+      {
+        "title": "Transparency",
+        "text": "Honest communication with clients."
+      },
+      {
+        "title": "Commitment",
+        "text": "Total dedication to project success."
+      },
+      {
+        "title": "Sustainability",
+        "text": "Solutions with long-term impact."
+      }
+    ]
+  },
+  "mission": {
+    "title": "Mission",
+    "our": "Our Mission",
+    "text": "Our mission is to design impactful e-commerce solutions that inspire creativity and enhance business efficiency. We strive to transform ideas into reality while enabling the digitalization of commerce.",
+    "growth": {
+      "title": "Simplify Sales",
+      "subtitle": "Accelerate Growth."
+    }
   }
 }

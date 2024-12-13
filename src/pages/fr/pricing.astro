@@ -1,11 +1,15 @@
 ---
 import { changeLanguage } from "i18next";
-import Soon from "@/components/Soon.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
+import PricingHero from "@/components/pricing/PricingHero.astro";
+import PricingCompare from "@/components/pricing/PricingCompare.astro";
+import Faq from "@/components/home/Faq.astro";
 
 changeLanguage("fr");
 ---
 
 <MainLayout>
-  <Soon />
+  <PricingHero />
+  <PricingCompare />
+  <Faq />
 </MainLayout>

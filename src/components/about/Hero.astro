@@ -1,0 +1,23 @@
+---
+import { Trans } from "astro-i18next/components";
+import Container from "../ui/Container.astro";
+import Paragraph from "../ui/Paragraph.astro";
+import Title from "../ui/Title.astro";
+import Title2 from "../ui/Title2.astro";
+import UpperTitle from "../ui/UpperTitle.astro";
+
+import { t } from "i18next";
+---
+
+<Container>
+  <div class="flex flex-col my-16">
+    <UpperTitle>{t("about.title")}</UpperTitle>
+    <Title2>{t("about.we")}</Title2>
+  </div>
+  <div class="flex flex-col gap-4 max-w-[90ch]">
+    <Title>{t("about.journey.title")}</Title>
+    <Paragraph>
+      <span set:html={t("about.journey.text")}/>
+    </Paragraph>
+  </div>
+</Container>

@@ -1,0 +1,24 @@
+---
+import { t } from "i18next";
+import UpperTitle from "../ui/UpperTitle.astro";
+import Container from "../ui/Container.astro";
+import Title from "../ui/Title.astro";
+import { Trans } from "astro-i18next/components";
+import PricingV1 from "../home/PricingV1.astro";
+import Title2 from "../ui/Title2.astro";
+---
+
+<Container>
+  <div class="text-center px-4 mt-16">
+    <UpperTitle>
+      {t("pricing.title.1")}
+    </UpperTitle>
+
+    <Title2>
+      <Trans i18nKey={"pricing.title.2"}>
+        {t("pricing.title.2")}
+      </Trans>
+    </Title2>
+  </div>
+  <PricingV1 withTitle={false} />
+</Container>

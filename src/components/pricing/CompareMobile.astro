@@ -1,0 +1,130 @@
+---
+import { cn } from "@/utils/cn";
+import Correct from "../ui/Correct.astro";
+import Notcorrect from "../ui/Notcorrect.astro";
+import { t } from "i18next";
+import { Icon } from "astro-icon/components";
+
+const plansData: Array<any> = t("plans.data", { returnObjects: true });
+---
+
+<div class="flex flex-col mt-2 gap-8">
+  <details open>
+    <summary>
+      <p
+        class="p-3 grid gap-2 grid-cols-[1fr_auto] cursor-pointer font-semibold text-lg border-y text-secondary-darker">
+        {t("pricing.compare.price")}
+        <Icon
+          class="ml-auto text-4xl group-open:rotate-180 transition p-2 bg-secondary rounded-full text-white"
+          name={"arrow"}
+        />
+      </p>
+    </summary>
+
+    {
+      plansData.map((item, i) => {
+        return (
+          <div
+            class={cn(
+              "grid font-medium grid-cols-2 gap-4 p-3 border-b text-secondary",
+              {
+                "border-b-0": i === 3,
+              }
+            )}>
+            <p>{item.title}</p>
+            <div class={cn("flex items-center justify-start")}>
+              <p class={"text-lg  font-medium"}>{item.price}</p>
+              <p class="font-medium text-lg">$</p>
+              <p class="text-gray-700 text-base">/ {t("plans.month")}</p>
+            </div>
+          </div>
+        );
+      })
+    }
+  </details>
+  <details open>
+    <summary>
+      <p
+        class="p-3 gap-2 grid grid-cols-[1fr_auto] cursor-pointer font-semibold text-lg border-y text-secondary-darker">
+        {t("pricing.type")}
+        <Icon
+          class="ml-auto text-4xl group-open:rotate-180 transition p-2 bg-secondary rounded-full text-white"
+          name={"arrow"}
+        />
+      </p>
+    </summary>
+
+    {
+      plansData.map((item, i) => {
+        return (
+          <div
+            class={cn(
+              "grid font-medium grid-cols-2 gap-4 p-3 border-b text-secondary",
+              {
+                "border-b-0": i === 3,
+              }
+            )}>
+            <p>{item.title} </p>
+            <p>{item.description}</p>
+          </div>
+        );
+      })
+    }
+  </details>
+  {
+    plansData.at(-1).features.map((item, i) => {
+      const basic = plansData[0];
+      const growth = plansData[1];
+      const advanced = plansData[2];
+      const enterprise = plansData[3];
+
+      const isInBasic = basic.features[i]?.title === item.title;
+      const isInGrowth = growth.features[i]?.title === item.title;
+      const isInAdanced = advanced.features[i]?.title === item.title;
+
+      return (
+        <details open>
+          <summary>
+            <p class="p-3 grid grid-cols-[1fr_auto] gap-2 cursor-pointer font-semibold text-lg border-y text-secondary-darker">
+              {item.title}
+              <Icon
+                class="ml-auto text-4xl group-open:rotate-180 transition p-2 bg-secondary rounded-full text-white"
+                name={"arrow"}
+              />
+            </p>
+          </summary>
+          <div>
+            <div class="grid grid-cols-[1fr_1fr_1fr] gap-1 p-2">
+              <p>{basic.title}</p>
+              <p class="flex items-center justify-center">
+                {isInBasic ? <Correct /> : <Notcorrect />}
+              </p>
+              <p class="text-sm">{basic.features[i]?.subtitle}</p>
+            </div>
+            <div class="grid grid-cols-[1fr_1fr_1fr] gap-1 p-2">
+              <p>{growth.title} </p>
+              <p class="flex items-center justify-center">
+                {isInGrowth ? <Correct /> : <Notcorrect />}
+              </p>
+              <p class="text-sm">{growth.features[i]?.subtitle}</p>
+            </div>
+            <div class="grid grid-cols-[1fr_1fr_1fr] gap-1 p-2">
+              <p>{advanced.title} </p>
+              <p class="flex items-center justify-center">
+                {isInAdanced ? <Correct /> : <Notcorrect />}
+              </p>
+              <p class="text-sm">{advanced.features[i]?.subtitle}</p>
+            </div>
+            <div class="grid grid-cols-[1fr_1fr_1fr] gap-1 p-2">
+              <p>{enterprise.title} </p>
+              <p class="flex items-center justify-center">
+                <Correct />
+              </p>
+              <p class="text-sm">{enterprise.features[i]?.subtitle}</p>
+            </div>
+          </div>
+        </details>
+      );
+    })
+  }
+</div>

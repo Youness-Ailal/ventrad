@@ -1,0 +1,27 @@
+---
+import { t } from "i18next";
+import Container from "../ui/Container.astro";
+import UpperTitle from "../ui/UpperTitle.astro";
+import Title from "../ui/Title.astro";
+import Button from "../ui/Button.astro";
+const valuesData: Array<any> = t("values.data", { returnObjects: true });
+---
+
+<div class="w-screen bg-secondary/15">
+  <Container>
+    <div class="py-20 p-4 flex flex-col">
+      <div class="text-center flex flex-col gap-2">
+        <UpperTitle>{t("values.title")} </UpperTitle>
+        <Title>{t("values.subtitle")} </Title>
+      </div>
+
+      <ul class="grid my-16 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
+        {valuesData.map(item => <li class="p-8 min-w-[300px] rounded-xl text-center flex flex-col justify-center items-center gap-3 bg-secondary text-white">
+          <p class="text-xl font-semibold">{item.title} </p>
+          <p class="text-secondary-light text-lg">{item.text} </p>
+           </li>)}
+      </ul>
+      <Button action="contact" className="self-center">{t('action.start')} </Button>
+    </div>
+  </Container>
+</div>

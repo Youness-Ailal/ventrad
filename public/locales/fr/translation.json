@@ -60,7 +60,14 @@
   },
   "features": {
     "upperTitle": "Fonctionnalités Principales",
-    "title": "Plate-forme tout-en-un pour <br/> votre activité de vente en gros et détail"
+    "title": "Plate-forme tout-en-un pour <br/> votre activité de vente en gros et détail",
+    "functions": {
+      "title": "Fonctionnalités",
+      "subtitle": "Les Superpouvoirs de<br/> Ventrad",
+      "description": "Découvrez comment Ventrad transforme la gestion de votre commerce de gros avec des fonctionnalités avancées.",
+      "performance": "Optimisez Votre Performance avec Ventrad",
+      "details": "Chaque fonctionnalité de Ventrad est conçue pour maximiser votre efficacité, du premier clic à la livraison finale."
+    }
   },
   "demoRequest": {
     "upperTitle": "Commencer maintenant",
@@ -155,7 +162,7 @@
     "upperTitle": "Plans",
     "title": "Des plans flexibles pour chaque grossiste et détaillant",
     "paragraph": "Ventrad offre quatre plans de tarification adaptés<br/> aux besoins variés des entreprises",
-    "dara": [
+    "data": [
       {
         "title": "Plan Basique",
         "description": "Idéal pour les petites entreprises B2B/B2C",
@@ -467,7 +474,17 @@
     "basic": "Basique",
     "growth": "Croissance",
     "advanced": "Avancé",
-    "enterprise": "Entreprise"
+    "enterprise": "Entreprise",
+    "title": {
+      "1": "Super Liste",
+      "2": "Tarification pour Tous<br/> Vos Besoins"
+    },
+    "compare": {
+      "1": "Comparer les Plans",
+      "2": "Comparez nos plans pour trouver la solution<br/> parfaite pour votre entreprise",
+      "price": "Prix"
+    },
+    "type": "Type d'entreprise"
   },
   "footer": {
     "stayInformed": "Restez informé avec Ventrad",
@@ -483,5 +500,122 @@
       "privacyPolicy": "Politique de confidentialité"
     },
     "readyToUse": "Prêt à utiliser"
+  },
+  "functionalitiesv2": [
+    {
+      "title": "Plateforme B2B/B2C",
+      "text": "Une plateforme de vente en ligne conçue pour les marques B2B/B2C et les distributeurs en gros. Simplifiez les transactions, augmentez vos ventes et atteignez de nouveaux marchés.",
+      "icon": "b2bb2c"
+    },
+    {
+      "title": "Personnalisation Complète",
+      "text": "Un design adaptable qui offre une expérience en ligne unique et personnalisée pour vos clients, tout en reflétant parfaitement votre identité de marque.",
+      "icon": "customization"
+    },
+    {
+      "title": "Gestion Multi-canal",
+      "text": "Gérez efficacement vos revendeurs grâce à des stratégies de tarification adaptées, répondant ainsi à leurs besoins spécifiques.",
+      "icon": "multichannel"
+    },
+    {
+      "title": "Tarification Dynamique",
+      "text": "Offrez à vos revendeurs une tarification dynamique adaptée à leurs exigences pour plus de flexibilité et de compétitivité.",
+      "icon": "dynamicpricing"
+    },
+    {
+      "title": "Intégration Facile des Outils",
+      "text": "Connectez rapidement et facilement votre ERP, CRM et autres systèmes essentiels pour des opérations fluides.",
+      "icon": "easyintegration"
+    },
+    {
+      "title": "Application Mobile",
+      "text": "Offrez à vos clients la commodité de passer des commandes directement depuis leurs smartphones grâce à une application mobile personnalisable.",
+      "icon": "mobileapp"
+    },
+    {
+      "title": "Performance Optimisée",
+      "text": "Une plateforme optimisée pour supporter un trafic élevé et garantir une expérience utilisateur fluide et fiable.",
+      "icon": "optimizedperformance"
+    },
+    {
+      "title": "Support Technique Dédié",
+      "text": "Bénéficiez d'une assistance technique prioritaire et personnalisée pour répondre efficacement à vos besoins continus.",
+      "icon": "technicalsupport"
+    },
+    {
+      "title": "Automatisation",
+      "text": "Centralisez et automatisez vos processus de commande pour gagner du temps, réduire les erreurs et accroître votre efficacité.",
+      "icon": "automation"
+    },
+    {
+      "title": "Stock en Temps Réel",
+      "text": "Suivez avec précision votre inventaire en temps réel pour éviter les pénuries ou le surstockage, garantissant ainsi des niveaux de stock optimaux.",
+      "icon": "realtimestock"
+    },
+    {
+      "title": "Programmes de Fidélité Intégrés",
+      "text": "Fidélisez vos clients grâce à des programmes de récompenses intégrés et personnalisables.",
+      "icon": "loyaltyprogram"
+    },
+    {
+      "title": "Chat en Direct",
+      "text": "Engagez-vous avec vos clients instantanément et répondez à leurs questions en temps réel, améliorant ainsi leur satisfaction et leur fidélité.",
+      "icon": "livechat"
+    }
+  ],
+  "about": {
+    "title": "Notre Parcours, Valeurs et Missions",
+    "we": "Nous Sommes Ventrad",
+    "journey": {
+      "title": "Notre Parcours",
+      "text": "Depuis 2018, Ventrad s'est engagé à transformer le commerce en ligne en offrant des solutions technologiques innovantes et sur mesure. Partant d'une vision créative, nous avons développé une plateforme qui s'adapte aux besoins des entreprises B2B et B2C.<br /><br /> Aujourd'hui, nous sommes fiers de contribuer à la croissance de nos clients en leur fournissant des outils puissants et personnalisés."
+    }
+  },
+  "values": {
+    "title": "Ce qui nous guide au quotidien",
+    "subtitle": "Nos Valeurs Fondamentales",
+    "data": [
+      {
+        "title": "Créativité",
+        "text": "Solutions innovantes et uniques à chaque projet."
+      },
+      {
+        "title": "Impact",
+        "text": "Actions pour résultats mesurables et significatifs."
+      },
+      {
+        "title": "Excellence",
+        "text": "Qualité supérieure à chaque étape."
+      },
+      {
+        "title": "Adaptabilité",
+        "text": "Solutions évolutives et flexibles."
+      },
+      {
+        "title": "Collaboration",
+        "text": " Co-création et partenariats solides."
+      },
+      {
+        "title": "Transparence",
+        "text": "Échanges honnêtes avec les clients."
+      },
+      {
+        "title": "Engagement",
+        "text": "Dévouement total pour la réussite des projets."
+      },
+      {
+        "title": "Durabilité",
+        "text": "Solutions à impact long-terme."
+      }
+    ]
+  },
+  "mission": {
+    "title": "Mission",
+    "our": "Notre Mission",
+    "text": "Notre mission est de concevoir des solutions e-commerce impactantes qui stimulent la créativité et l'efficacité des entreprises. Nous visons à transformer les idées en réalité, tout en facilitant la digitalisation du commerce.",
+    "growth": {
+      "title": "Simplifiez la Vente",
+      "subtitle": "Accélérez la Croissance."
+    }
   }
 }

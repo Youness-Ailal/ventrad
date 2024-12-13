@@ -1,0 +1,66 @@
+---
+import { Icon } from "astro-icon/components";
+import Container from "../ui/Container.astro";
+import Paragraph from "../ui/Paragraph.astro";
+import Title from "../ui/Title.astro";
+
+import { t } from "i18next";
+import Button from "../ui/Button.astro";
+const functionalitiesData: Array<any> = t("functionalitiesv2", {
+  returnObjects: true,
+});
+const firstHalf = functionalitiesData.slice(
+  0,
+  Math.floor(functionalitiesData.length / 2)
+);
+const secondHalf = functionalitiesData.slice(
+  Math.floor(functionalitiesData.length / 2)
+);
+---
+
+<Container>
+  <div class="mx-auto flex flex-col gap-4">
+    <div class="mx-auto flex flex-col gap-4 text-center">
+
+      <Title>{t("features.functions.performance")}</Title>
+      <Paragraph>{t("features.functions.details")}</Paragraph>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 px-2 mt-10 mx-auto w-[min(1000px,100%)]">
+      <div class="flex flex-col gap-4">
+        {
+          firstHalf.map(item => (
+            <details class="group bg-secondary-light hover:bg-primary-light-hover/70 open:bg-primary-light-hover/70 transition [&_summary::-webkit-details-marker]:hidden  rounded-md">
+              <summary class="flex cursor-pointer p-3 lg:p-6  gap-4">
+                <Icon class="text-2xl" name={item.icon} />
+                <p class="text-xl group-open:text-secondary-hover font-semibold text-secondary-darker">
+                  {item.title}{" "}
+                </p>
+              </summary>
+              <p class="p-3  lg:p-6 pt-2 pl-0 ml-4 max-w-[100ch] text-lg border-t border-secondary-darker/20">
+                {item.text}{" "}
+              </p>
+            </details>
+          ))
+        }
+      </div>
+      <div class="flex flex-col gap-4">
+        {
+          secondHalf.map(item => (
+            <details class="group bg-secondary-light hover:bg-primary-light-hover open:bg-primary-light-hover transition [&_summary::-webkit-details-marker]:hidden  rounded-md">
+              <summary class="flex cursor-pointer p-3 lg:p-6  gap-4">
+                <Icon class="text-2xl" name={item.icon} />
+                <p class="text-xl group-open:text-secondary-hover font-semibold text-secondary-darker">
+                  {item.title}{" "}
+                </p>
+              </summary>
+              <p class="p-3  lg:p-6 pt-2 pl-0 ml-4 max-w-[100ch] text-lg border-t border-secondary-darker/20">
+                {item.text}{" "}
+              </p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+    <Button action="contact" className="self-center mt-12 !px-8">{t("action.demo")} </Button>
+  </div>
+</Container>

@@ -1,0 +1,29 @@
+---
+import { Trans } from "astro-i18next/components";
+import Container from "../ui/Container.astro";
+import Paragraph from "../ui/Paragraph.astro";
+import Title from "../ui/Title.astro";
+import CompareDesktop from "./CompareDesktop.astro";
+import { t } from "i18next";
+import CompareMobile from "./CompareMobile.astro";
+---
+
+<Container>
+  <div class="text-center p-4 flex flex-col gap-2">
+    <Title>
+      {t("pricing.compare.1")}
+    </Title>
+    <Paragraph>
+      <Trans i18nKey="pricing.compare.2">
+        {t("pricing.compare.2")}
+      </Trans>
+    </Paragraph>
+  </div>
+
+  <div class="hidden lg:block">
+    <CompareDesktop />
+  </div>
+  <div class="lg:hidden block">
+    <CompareMobile />
+  </div>
+</Container>

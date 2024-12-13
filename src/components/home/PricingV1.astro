@@ -8,17 +8,18 @@ import PricingV1TableDesktop from "../ui/PricingV1TableDesktop.astro";
 import PricingV1TableMobile from "../ui/PricingV1TableMobile.astro";
 import { t } from "i18next";
 import { Trans } from "astro-i18next/components";
+const { withTitle = true } = Astro.props;
 ---
 
 <Container>
   <div class="flex flex-col text-center gap-2 p-1 sm:p-2 max-w-1400 mx-auto">
-    <UpperTitle>Plans</UpperTitle>
+{withTitle &&    <UpperTitle>Plans</UpperTitle>
     <Title>{t("plans.title")}</Title>
     <Paragraph>
       <Trans i18nKey="plans.paragraph">
         {t("plans.paragraph")}
       </Trans>
-    </Paragraph>
+    </Paragraph>}
 
     <div class="hidden lg:block">
       <PricingV1TableDesktop />
