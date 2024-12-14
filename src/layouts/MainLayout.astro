@@ -4,15 +4,11 @@ import Footer from "@/components/Footer.astro";
 import Nav from "@/components/Nav.astro";
 import "@/index.scss";
 
-const {
-  titleA = "Ventrad | Solution de gestion des commandes et ventes",
-  descriptionA = "Gérez sans effort vos stocks, vos commandes et vos clients sur le web et sur mobile. Augmentez vos ventes et développez votre activité avec la solution e-commerce tout-en-un de Ventrad.",
-} = Astro.props;
+const { title = t("home.title"), description = t("home.description") } =
+  Astro.props;
 
 import i18next, { t } from "i18next";
 import { HeadHrefLangs } from "astro-i18next/components";
-const title = t("home.title");
-const description = t("home.description");
 ---
 
 <html lang={i18next.language}>

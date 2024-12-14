@@ -1,54 +1,28 @@
 ---
 import { changeLanguage } from "i18next";
-import Soon from "@/components/Soon.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
-import { getCollection } from "astro:content";
-import formatDate from "@/utils/formatDate";
+import Container from "@/components/ui/Container.astro";
+import PostList from "@/components/blog/PostList.astro";
+import UpperTitle from "@/components/ui/UpperTitle.astro";
+import Paragraph from "@/components/ui/Paragraph.astro";
+import Title2 from "@/components/ui/Title2.astro";
 
-const posts = await getCollection("posts");
 changeLanguage("en");
 ---
 
 <MainLayout>
-  <main class="flex flex-col gap-20">
-    <h1 class="text-2xl text-neutral-100">Posts</h1>
+  <Container>
+    <div class="flex my-10 mb-14 lg:mb-20 flex-col gap-1 text-center items-center justify-center max-w-[70ch] p-2 mx-auto">
+      <UpperTitle>Trends, Tips, and News</UpperTitle>
+      <Title2>Ventrad's Journal </Title2>
+      <div class="mt-4">
 
-    <article class="flex flex-col gap-4">
-      {
-        posts.map(post => (
-          <a
-            class="group flex flex-col gap-2 border-t border-neutral-700 py-4 transition-all hover:text-neutral-100"
-            href={`/blog/${post.slug}`}>
-            <div class="flex w-full items-center justify-between">
-              <h2 class="text-lg">{post.data.title}</h2>
-
-              <div class="flex flex-row items-center gap-4">
-                <p>{formatDate(post.data.publishedAt)}</p>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  class="transition-all duration-300 group-hover:translate-x-1">
-                  <path
-                    d="M5.25 12.75L12.75 5.25"
-                    stroke="#999999"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M5.25 5.25H12.75V12.75"
-                    stroke="#999999"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <p>{post.data.description}</p>
-          </a>
-        ))
-      }
-    </article>
-  </main>
+        <Paragraph
+        >Get inspired by the latest trends, tips, and news to optimize your
+        wholesale business.
+      </Paragraph>
+    </div>
+    </div>
+    <PostList />
+  </Container>
 </MainLayout>
