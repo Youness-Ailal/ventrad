@@ -4,26 +4,29 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import formatDate, { isNew } from "@/utils/formatDate";
 import MainLayout from "@/layouts/MainLayout.astro";
 import Container from "@/components/ui/Container.astro";
-
+const wpm = 200;
 changeLanguage("en");
 
 export async function getStaticPaths() {
-    const posts = await getCollection("posts");
-    return posts.map(post => ({
-        params: { slug: post.slug },
-        props: { post },
-    }));
+  const posts = await getCollection("posts");
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
 }
 type Props = {
-    post: CollectionEntry<"posts">;
+  post: CollectionEntry<"posts">;
 };
 const { post } = Astro.props;
 const { Content } = await post.render();
+const words = post.body.trim().split(/\s+/).length;
+
+const minutes = Math.ceil(words / wpm);
 ---
 
 <MainLayout title={post.data.title} description={post.data.description}>
   <Container>
-    <div class="flex flex-col gap-4 w-[min(800px,100%)] mx-auto">
+    <div class="flex flex-col gap-4 w-[min(800px,100%)] mx-auto post">
       <header role="presentation" class="flex flex-col gap-3 mb-12">
         <div class="aspect-video overflow-hidden w-full rounded-lg">
           <img
@@ -33,9 +36,14 @@ const { Content } = await post.render();
           />
         </div>
         <div
-          class="flex gap-4 justify-between items-center text-secondary text-lg">
+          class="flex gap-4 justify-between flex-wrap items-center text-secondary text-lg">
           <p>{isNew(post.data.publishedAt) && "New"}</p>
-          <p class="text-gray-400">{formatDate(post.data.publishedAt)}</p>
+          <div class="flex items-center gap-1 text-gray-400">
+            <p class="pr-2 border-r border-gtay-200">
+              Max {minutes} Min read
+            </p>
+            <p class="pl-2">{formatDate(post.data.publishedAt)}</p>
+          </div>
         </div>
         <h2 class="text-4xl text-secondary font-bold max-w-[35ch] mt-4">
           {post.data.title}

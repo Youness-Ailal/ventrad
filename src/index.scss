@@ -2,6 +2,9 @@ body {
   overflow-x: hidden;
   max-width: 100vw;
 }
+:root {
+  --primmary: #d76c58;
+}
 ::selection {
   background-color: hsl(9, 61%, 80%);
   color: #212735;
@@ -182,4 +185,25 @@ input:not(:focus):not(:placeholder-shown):valid {
 abbr[title] {
   border-bottom: none !important;
   text-decoration: none !important;
+}
+
+.post {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  li {
+    padding-left: 1rem;
+    &::before {
+      content: "• ";
+    }
+  }
+  h1,
+  h3,
+  h4,
+  h5 {
+    font-size: 1.2rem;
+    color: var(--primmary);
+  }
 }
