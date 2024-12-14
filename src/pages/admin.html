@@ -8,6 +8,8 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,400;1,500;1,600&display=swap"
       rel="stylesheet" />
@@ -16,6 +18,17 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
       CMS.registerPreviewStyle("./cms.css");
+    </script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
     </script>
   </body>
 </html>

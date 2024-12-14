@@ -3,19 +3,21 @@ backend:
   repo: Youness-Ailal/ventrad
   branch: main
   squash_merges: true
-  open_authoring: true
+  # open_authoring: true
 
-publish_mode: editorial_workflow
+logo_url: https://ventrad.co/_astro/logoText.BE-vSuzh.svg
+publish_mode: simple
 media_folder: public/images
 public_folder: /images
 site_url: "https://ventrad.co/"
 
 collections:
-  - name: blog
+  - name: posts
     label: Posts
     folder: src/content/posts
     create: true
     format: frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: blog/{{slug}}
     fields:
       - { name: title, label: Title }
@@ -27,5 +29,5 @@ collections:
           widget: "boolean",
           default: true,
         }
-      - { label: "Draft", name: "isDraft", widget: "boolean", default: false }
+      - { label: "Photo", name: "photo", widget: "image" }
       - { name: body, label: Body, widget: markdown }
