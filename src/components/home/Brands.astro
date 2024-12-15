@@ -1,0 +1,27 @@
+---
+import { t } from "i18next";
+import * as brandsMd from "@/content/brands.md";
+const brandsContent = brandsMd.frontmatter;
+const BrandsList: Array<any> = brandsContent.brands;
+import Container from "../ui/Container.astro";
+import UpperTitle from "../ui/UpperTitle.astro";
+import Title from "../ui/Title.astro";
+---
+
+<Container>
+  <div
+    class="flex flex-col gap-2 text-center items-center justify-center mx-auto max-w-[80ch] p-2">
+    <UpperTitle>{t("brands.upperTitle")} </UpperTitle>
+    <Title>{t("brands.title")} </Title>
+  </div>
+ 
+  <ul class="flex items-center gap-8 flex-wrap justify-center mt-4">
+    {
+      BrandsList?.map(item => (
+        <li>
+          <img class="h-12" src={item} alt="Brand" />
+        </li>
+      ))
+    }
+  </ul>
+</Container>
