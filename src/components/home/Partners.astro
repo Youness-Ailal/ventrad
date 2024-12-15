@@ -1,0 +1,106 @@
+---
+import * as partnerMd from "@/content/partners.md";
+import Container from "../ui/Container.astro";
+const partnersContent = partnerMd.frontmatter;
+const partnersList: Array<any> = partnersContent.partners;
+---
+
+<Container>
+  <div class="mt-5 lg:mt-10 marquee">
+    <ul class="marquee-content flex items-center gap-8 p-4">
+      {
+        partnersList?.map(item => (
+          <li>
+            <img src={item} alt="a partner of ventrad" />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Container>
+
+<style>
+  :root {
+    --marquee-width: 80vw;
+    --marquee-height: 8rem;
+    /* --marquee-elements: 12; */ /* defined with JavaScript */
+    --marquee-elements-displayed: 12;
+
+    --marquee-element-width: calc(
+      var(--marquee-width) / var(--marquee-elements-displayed)
+    );
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  }
+
+  .marquee {
+    height: var(--marquee-height);
+    background-color: #fff;
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+  }
+  .marquee:before,
+  .marquee:after {
+    position: absolute;
+    top: 0;
+    width: 5rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+  }
+  .marquee:before {
+    left: 0;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.02));
+  }
+  .marquee:after {
+    right: 0;
+    background: linear-gradient(to left, white, rgba(255, 255 255, 0.02));
+  }
+  .marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+  }
+  /* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(
+        calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
+      );
+    }
+  }
+  .marquee-content li {
+    height: 5rem;
+    aspect-ratio: 16/9;
+  }
+
+  .marquee-content li img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    object-fit: contain;
+    filter: grayscale(0.8);
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+</style>
+<script>
+  const root = document.documentElement;
+  const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
+    "--marquee-elements-displayed"
+  );
+  const marqueeContent = document.querySelector("ul.marquee-content");
+
+  root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+  for (let i = 0; i < marqueeElementsDisplayed; i++) {
+    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+  }
+</script>
