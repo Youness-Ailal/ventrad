@@ -57,3 +57,22 @@ collections:
               label: Embed Code
               widget: string
               hint: "Paste HTML embed code here from Wistia"
+
+  - name: brands
+    label: brands
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: brands
+        label: Brands images
+        file: src/content/brands.md
+        format: frontmatter
+        fields:
+          - name: brands
+            label: Brands list
+            widget: list
+            field:
+              name: Brandimage
+              label: Brand image
+              widget: image
