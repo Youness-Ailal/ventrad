@@ -31,3 +31,29 @@ collections:
         }
       - { label: "Photo", name: "photo", widget: "image" }
       - { name: body, label: Body, widget: markdown }
+
+  - name: academy
+    label: Academy
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: academy
+        label: Academy Page Content
+        file: src/content/academy.md
+        format: frontmatter
+        fields:
+          - { name: upperTitleEn, label: Upper Title (EN), widget: string }
+          - { name: titleEn, label: Title (EN), widget: string }
+          - { name: descriptionEn, label: Description (EN), widget: text }
+          - { name: upperTitleFr, label: Upper Title (FR), widget: string }
+          - { name: titleFr, label: Title (FR), widget: string }
+          - { name: descriptionFr, label: Description (FR), widget: text }
+          - name: videos
+            label: HTML Embed Codes
+            widget: list
+            field:
+              name: embedCode
+              label: Embed Code
+              widget: string
+              hint: "Paste HTML embed code here from Wistia"

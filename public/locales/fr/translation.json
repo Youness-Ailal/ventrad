@@ -11,7 +11,8 @@
     { "label": "Fonctionnalités", "href": "/fr/functions" },
     { "label": "À Propos de Nous", "href": "/fr/about" },
     { "label": "Tarification", "href": "/fr/pricing" },
-    { "label": "Blog", "href": "/fr/blog" }
+    { "label": "Blog", "href": "/fr/blog" },
+    { "label": "Academy", "href": "/academy" }
   ],
   "hero": {
     "upperTitle": "La solution complète pour gérer les commandes et développer les ventes",

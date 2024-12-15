@@ -11,7 +11,8 @@
     { "label": "Features", "href": "/functions" },
     { "label": "About Us", "href": "/about" },
     { "label": "Pricing", "href": "/pricing" },
-    { "label": "Blog", "href": "/blog" }
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Academy", "href": "/academy" }
   ],
   "choose": {
     "title": "Choose Ventrad to Accelerate Your Growth!",
