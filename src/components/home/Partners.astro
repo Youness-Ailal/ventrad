@@ -10,7 +10,7 @@ const partnersList: Array<any> = partnersContent.partners;
     <ul class="marquee-content flex items-center gap-8 p-4">
       {
         partnersList?.map(item => (
-          <li>
+          <li class="bg-white">
             <img src={item} alt="a partner of ventrad" />
           </li>
         ))
@@ -24,7 +24,7 @@ const partnersList: Array<any> = partnersContent.partners;
     --marquee-width: 80vw;
     --marquee-height: 8rem;
     /* --marquee-elements: 12; */ /* defined with JavaScript */
-    --marquee-elements-displayed: 12;
+    --marquee-elements-displayed: 22;
 
     --marquee-element-width: calc(
       var(--marquee-width) / var(--marquee-elements-displayed)
@@ -41,6 +41,8 @@ const partnersList: Array<any> = partnersContent.partners;
   }
   .marquee:before,
   .marquee:after {
+    user-select: none;
+    pointer-events: none;
     position: absolute;
     top: 0;
     width: 5rem;
