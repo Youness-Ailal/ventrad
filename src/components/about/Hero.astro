@@ -10,11 +10,11 @@ import { t } from "i18next";
 ---
 
 <Container>
-  <div class="flex flex-col my-16">
+  <div class="flex flex-col my-16 items-center justify-center text-center mx-auto">
     <UpperTitle>{t("about.title")}</UpperTitle>
     <Title2>{t("about.we")}</Title2>
   </div>
-  <div class="flex flex-col gap-4 max-w-[90ch]">
+  <div class="flex flex-col gap-4 max-w-[90ch] items-center justify-center text-center mx-auto">
     <Title>{t("about.journey.title")}</Title>
     <Paragraph>
       <span set:html={t("about.journey.text")}/>

@@ -1,0 +1,19 @@
+---
+import * as academyMd from "@/content/academy.md";
+import Container from "../ui/Container.astro";
+const academyContent = academyMd.frontmatter;
+const videosList: Array<any> = academyContent.videos;
+console.log(videosList);
+---
+
+<Container>
+  <ul class="grid md:grid-cols-2 gap-4 gap-y-8 md:gap-8">
+    {
+      videosList?.map(item => (
+        <li class="p-4 ">
+          <Fragment set:html={item} />;
+        </li>
+      ))
+    }
+  </ul>
+</Container>
