@@ -76,3 +76,22 @@ collections:
               name: Brandimage
               label: Brand image
               widget: image
+
+  - name: partners
+    label: Partners
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: partners
+        label: Partners images
+        file: src/content/partners.md
+        format: frontmatter
+        fields:
+          - name: partners
+            label: Partners list
+            widget: list
+            field:
+              name: Partnerimage
+              label: Partner image
+              widget: image
