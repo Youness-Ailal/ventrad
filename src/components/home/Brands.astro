@@ -15,11 +15,11 @@ import Title from "../ui/Title.astro";
     <Title>{t("brands.title")} </Title>
   </div>
  
-  <ul class="flex items-center gap-8 flex-wrap justify-center mt-4">
+  <ul class="flex items-center gap-4 flex-wrap justify-center mt-4">
     {
       BrandsList?.map(item => (
-        <li>
-          <img class="h-12" src={item} alt="Brand" />
+        <li class="p-4 border-x outline-gray-200">
+          <img class="h-10" src={item} alt="Brand" />
         </li>
       ))
     }

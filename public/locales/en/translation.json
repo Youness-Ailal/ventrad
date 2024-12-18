@@ -12,7 +12,7 @@
     { "label": "About Us", "href": "/about" },
     { "label": "Pricing", "href": "/pricing" },
     { "label": "Blog", "href": "/blog" },
-    { "label": "Academy", "href": "/academy" }
+    { "label": "Community", "href": "/community" }
   ],
   "choose": {
     "title": "Choose Ventrad to Accelerate Your Growth!",
@@ -465,8 +465,8 @@
       "subtitle": "Accelerate Growth."
     }
   },
-  "brands":{
-    "upperTitle":"Explore Our Exclusive Partners",
-    "title":"Building Strong Relationships for Exceptional Outcomes"
+  "brands": {
+    "upperTitle": "Explore Our Exclusive Partners",
+    "title": "Building Strong Relationships for Exceptional Outcomes"
   }
 }

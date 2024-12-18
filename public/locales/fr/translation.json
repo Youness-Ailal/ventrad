@@ -12,7 +12,7 @@
     { "label": "À Propos de Nous", "href": "/fr/about" },
     { "label": "Tarification", "href": "/fr/pricing" },
     { "label": "Blog", "href": "/fr/blog" },
-    { "label": "Academy", "href": "/academy" }
+    { "label": "Community", "href": "/community" }
   ],
   "hero": {
     "upperTitle": "La solution complète pour gérer les commandes et développer les ventes",

@@ -1,9 +1,8 @@
 backend:
-  name: github
+  name: git-gateway
   repo: Youness-Ailal/ventrad
   branch: main
   squash_merges: true
-  # open_authoring: true
 
 logo_url: https://ventrad.co/_astro/logoText.BE-vSuzh.svg
 publish_mode: simple
