@@ -1,7 +1,7 @@
 ---
 title: Main Features of Wholesale Trading Platforms
-description: Discover key features such as bulk ordering, tiered pricing, and
-  inventory management to enhance your wholesale operations.
+description: Discover some key features such as bulk ordering, tiered pricing,
+  and inventory management to enhance your wholesale operations.
 publishedAt: 2024-12-24
 isPublish: true
 photo: /images/774c72783a124e07282411cdd022970a.png
