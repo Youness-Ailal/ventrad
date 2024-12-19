@@ -4,7 +4,7 @@ brands:
   - /images/images-removebg-preview.png
   - /images/logo-stg-entreprise-et-ecole-2024-10-31t180038.788.png
   - /images/cmicard.png
-  - /images/cmicard.png
   - /images/tawssil-logo-fc7e1ee125-seeklogo.com.png
   - /images/aramex_logo.svg.png
+  - /images/logo-sdtm.png
 ---
