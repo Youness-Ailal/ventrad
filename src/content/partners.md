@@ -1,7 +1,6 @@
 ---
 partners:
-  - /images/logolipeas.jpg
+  - /images/logolipeas-bty6-ocf.png
   - /images/logohslwp.png
-  - /images/logo-light.png
   - /images/logo.png
 ---
