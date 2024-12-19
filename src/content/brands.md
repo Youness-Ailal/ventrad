@@ -2,7 +2,7 @@
 brands:
   - /images/617abc826e7b6_logo_e-tijar-removebg-preview.png
   - /images/images-removebg-preview.png
-  - /images/logo-stg-entreprise-et-ecole-2024-10-31t180038.788.png
+  - /images/design_sans_titre__2_-removebg-preview.png
   - /images/cmicard.png
   - /images/tawssil-logo-fc7e1ee125-seeklogo.com.png
   - /images/aramex_logo.svg.png
