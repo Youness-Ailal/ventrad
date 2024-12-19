@@ -2,9 +2,8 @@
 brands:
   - /images/617abc826e7b6_logo_e-tijar-removebg-preview.png
   - /images/logo.png
-  - /images/design_sans_titre__2_-removebg-preview.png
   - /images/cmicard.png
-  - /images/tawssil-logo-fc7e1ee125-seeklogo.com.png
+  - /images/6241db8dad1a5b8a2c009881_logo-tawssil.png
   - /images/aramex_logo.svg.png
   - /images/logo-sdtm.png
   - /images/glovo_logo.png
