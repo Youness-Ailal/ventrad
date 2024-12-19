@@ -7,4 +7,5 @@ brands:
   - /images/aramex_logo.svg.png
   - /images/logo-sdtm.png
   - /images/glovo_logo.png
+  - /images/logo2.png
 ---
