@@ -1,9 +1,10 @@
 ---
 brands:
-  - /images/netlify_logo.svg.png
-  - /images/microsoft_azure_logo.svg.png
-  - /images/google-cloud-icon-2048x1646-7admxejz.png
-  - /images/images.png
-  - /images/digitalocean-icon-2048x2048-3xbgy582.png
+  - /images/617abc826e7b6_logo_e-tijar-removebg-preview.png
+  - /images/images-removebg-preview.png
+  - /images/logo-stg-entreprise-et-ecole-2024-10-31t180038.788.png
+  - /images/cmicard.png
+  - /images/cmicard.png
   - /images/tawssil-logo-fc7e1ee125-seeklogo.com.png
+  - /images/2022109af96d38c521e5a882819e5f7e.png
 ---
