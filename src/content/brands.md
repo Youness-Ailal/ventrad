@@ -7,4 +7,5 @@ brands:
   - /images/tawssil-logo-fc7e1ee125-seeklogo.com.png
   - /images/aramex_logo.svg.png
   - /images/logo-sdtm.png
+  - /images/glovo_logo.png
 ---
