@@ -6,5 +6,5 @@ brands:
   - /images/cmicard.png
   - /images/cmicard.png
   - /images/tawssil-logo-fc7e1ee125-seeklogo.com.png
-  - /images/2022109af96d38c521e5a882819e5f7e.png
+  - /images/aramex_logo.svg.png
 ---
